@@ -1,0 +1,13 @@
+.vscode/
+fix.py
+mergeVids.py
+tweets*Fix.py
+*.txt
+test/
+optsec/
+opt2/
+opt/
+decopt/
+decopt2/
+urls_root/
+archivedTweetsCrawler/tweetsSTREAMs.csv
