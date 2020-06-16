@@ -1,4 +1,5 @@
 .vscode/
+twitterOLAPingENV/
 fix.py
 mergeVids.py
 tweets*Fix.py
@@ -10,4 +11,10 @@ opt/
 decopt/
 decopt2/
 urls_root/
+transformation/__pycache__/
 archivedTweetsCrawler/tweetsSTREAMs.csv
+.*junk*.py
+*.json
+*.csv
+*.html
+eda.py
