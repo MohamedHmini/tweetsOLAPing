@@ -16,14 +16,21 @@ class googleNLP_API:
     supported = ['ar', 'zh', 'zh-Hant', 'nl', 'en', 'fr', 'de', 'id', 'it', 'ja', 'ko', 'pl', 'pt', 'es', 'th', 'tr', 'vi']
     ispos  = lambda self,sc,mg:  sc * mg > 0
     isneg  = lambda self,sc,mg:  sc * mg < 0
-    ismixed = lambda self,sc:  -0.3 <= sc <= 0.3
-    isneutral = lambda self,mg:  mg <= 2
+    ismixed = lambda self,sc,mg:  -0.3 <= sc <= 0.3 and mg > 2
+    isneutral = lambda self,sc,mg: -0.3 <= sc <= 0.3 and mg <= 2
     client = None
 
     def __init__(self):
         client = language.LanguageServiceClient.from_service_account_json('projectkey.json')
         self.client = client
     
+    def sentimentInterpretation(self, sc, mg):
+        if self.ismixed(sc,mg): return 'mixed'
+        if self.isneutral(sc,mg): return 'neutral'
+        if self.ispos(sc,mg): return 'positive'
+        else : return 'negative'
+
+
     def getTextAnnotation(self, tx, lang):
         document = types.Document(
             content=tx,
@@ -54,7 +61,7 @@ class googleNLP_API:
         
         stuff = self.getTextAnnotation(tw['text'], tw['lang'])
         
-        r =[*stuff, 'positive' if self.ispos(stuff[0], stuff[1]) else 'negative', self.ismixed(stuff[0]), self.isneutral(stuff[1])]
+        r =[*stuff, stuff[0], stuff[1], self.sentimentInterpretation(stuff[0], stuff[1]), stuff[2].split('/')[1]]
         return r
     
 

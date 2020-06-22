@@ -18,3 +18,11 @@ archivedTweetsCrawler/tweetsSTREAMs.csv
 *.csv
 *.html
 eda.py
+gottaberemoved.py
+junk.py
+junkthreads.py
+data/
+transformation/nlpjunk.py
+cleanSentiments.py
+cleanTweets.py
+createDataBatches.py

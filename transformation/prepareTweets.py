@@ -13,7 +13,7 @@ from RandomTweetMetricsEstimator import RandomTweetMetricsEstimator
 
 
 
-# tw_id, favorite_count, retweet_count, reply_count, tweet_type, is_quote, source, weekday, monthname, day, hour, minute, second, year, month
+# tw_id, usr_id, favorite_count, retweet_count, reply_count, tweet_type, is_quote, source, weekday, monthname, day, hour, minute, second, year, month
 # is_truncated, place_type, place_name, place_full_name, country_code, country, is_possibly_sensitive, lang, has_hashtags, has_urls,
 # has_user_mentions, has_symbols, media_type
 def prepareTweet(optfile, tw):

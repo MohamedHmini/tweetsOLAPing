@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1062
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "tweetsOLAPing_loading", "tweetsOLAPing_loading\tweetsOLAPing_loading.dtproj", "{F285E6C5-DCF0-428E-B1E2-1C1927B178F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F285E6C5-DCF0-428E-B1E2-1C1927B178F8}.Development|Default.ActiveCfg = Development
+		{F285E6C5-DCF0-428E-B1E2-1C1927B178F8}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D60C4E0-776F-48DC-A3A0-1C93C978D233}
+	EndGlobalSection
+EndGlobal

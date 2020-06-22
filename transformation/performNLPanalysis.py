@@ -16,6 +16,12 @@ def NLP_processing(api, optf, tw):
 
 def process(js,tweetspool):
     global start
+    global c
+    if c == 5000:
+        print(tweetspool)
+        c = 0
+    else:
+        c+=1
     try:
         tw = json.loads(js)
     except Exception as e:
@@ -23,7 +29,7 @@ def process(js,tweetspool):
             err.write(f"{tweetspool},{e}\n")
     try:
         if 'id_str' in tw.keys():
-            if not start and tw['id'] == 1204860166904205312: start =True
+            if not start and tw['id'] == 1018659967346208768: start =True
             if start: NLP_processing(api, optf, tw)
     except Exception as e:
         with open(errf, 'a') as err:
@@ -33,7 +39,6 @@ def executeThreading():
     with concurrent.futures.ThreadPoolExecutor(3) as ex:
         for tweetspool in os.listdir(srcdir):
             with open(os.path.join(srcdir,tweetspool)) as src:
-                print(tweetspool)
                 for js in src:
                     ex.submit(lambda args:process(*args), [js,tweetspool])
 
@@ -46,6 +51,8 @@ if __name__ == '__main__':
     optf = os.path.abspath(args[2])
     errf = os.path.abspath(args[3])
     global start
+    global c
+    c = 0
     start = False
     executeThreading()
 
