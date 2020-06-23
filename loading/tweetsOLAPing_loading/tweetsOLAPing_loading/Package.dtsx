@@ -1,19 +1,2344 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
-  DTS:CreationDate="6/18/2020 4:32:35 AM"
+  DTS:CreationDate="6/22/2020 5:35:54 PM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-B595UD7"
   DTS:CreatorName="DESKTOP-B595UD7\MOHAMED HMINI"
-  DTS:DTSID="{7C107443-5602-43C3-972A-20F0314B8E1B}"
+  DTS:DTSID="{20914D85-01F8-43C2-9DC9-2DCA3CB8C724}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.93"
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionGUID="{31DE7717-3646-482F-8E8B-C74D728DEF55}">
+  DTS:VersionBuild="46"
+  DTS:VersionGUID="{50635CFE-75B3-4281-94FE-BEAB0B4F928D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-B595UD7\SQLEXPRESS.tweetsOLAPing]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{7A0ECA2D-DF3A-4C91-A9BB-99ED49C8F4CF}"
+      DTS:ObjectName="DESKTOP-B595UD7\SQLEXPRESS.tweetsOLAPing">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-B595UD7\SQLEXPRESS;Initial Catalog=tweetsOLAPing;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{00475F27-E971-4940-B60B-5F10ACAB93C3}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\MOHAMED HMINI\twitterOLAP\twitterOLAPing\batch_data\users.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="us_id"
+              DTS:DTSID="{8168510A-B711-4100-AD7D-C493E36FE8FD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" loc"
+              DTS:DTSID="{65AFB97B-3B59-4E82-9608-63629936EE85}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" is_protected"
+              DTS:DTSID="{43E9A6D6-94DE-4D94-935C-8FD6C1CF8033}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" is_verified"
+              DTS:DTSID="{F25AB78F-AD9A-4B65-81C0-96CD0843FD45}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" lang"
+              DTS:DTSID="{FA0A0616-9717-4491-A51E-D93DDE53B7A7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" followers_count"
+              DTS:DTSID="{22C04F91-ADD4-4FFF-90AE-A63E687F6BCA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" friends_count"
+              DTS:DTSID="{15364960-5E28-4518-9CA0-ED9E2D82A05E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" listed_count"
+              DTS:DTSID="{297541F8-2C56-449D-8DF4-9E00181979AD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" favourites_count"
+              DTS:DTSID="{4C74065D-E7ED-4DED-A207-7639B59AF6FD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" statuses_count"
+              DTS:DTSID="{1B113578-2DEF-4B37-AD37-1D40671C7264}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" utc_offset"
+              DTS:DTSID="{D1B277EC-C5A5-4D72-9466-CE2D9D00F839}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" time_zone"
+              DTS:DTSID="{8A8BD02B-0CD0-488A-B92A-EB0BA8BC1C50}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" weekday"
+              DTS:DTSID="{4595B576-BF5A-43D7-B084-3DCF78E99B2D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" monthname"
+              DTS:DTSID="{3A9A408A-5E63-4896-AA69-9D178097C158}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" day"
+              DTS:DTSID="{06E28C9B-4482-48B3-BCD6-5202C1BB87A3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" hour"
+              DTS:DTSID="{33158A10-75D8-4269-8316-069B939F9530}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" minute"
+              DTS:DTSID="{8DF3827A-9F12-4DD7-8C8C-837F28A36023}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" second"
+              DTS:DTSID="{95C09FFE-F966-4BE0-B2F2-6D75CED91742}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" year"
+              DTS:DTSID="{33C99749-137E-4B27-91BA-59045B86E7A8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" month"
+              DTS:DTSID="{53584546-1C3B-4B94-9B1D-C3EEE1CF20FA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" user_activity"
+              DTS:DTSID="{56CD3DDB-58EF-4B66-A2C9-4C133279EFB1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" user_category"
+              DTS:DTSID="{7AAA240E-DC8D-47F6-B476-2F2776532F58}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
   <DTS:Variables />
-  <DTS:Executables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{B5B5B4C6-7CAF-4CF9-B5B7-1D6391367045}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\Feed Date Data"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Feed Date Data"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Date]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Feed Date Data.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-B595UD7\SQLEXPRESS.tweetsOLAPing]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-B595UD7\SQLEXPRESS.tweetsOLAPing]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Feed Date Data.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Feed Date Data.Inputs[OLE DB Destination Input].Columns[weekday]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="weekday"
+                      externalMetadataColumnId="Package\Data Flow Task\Feed Date Data.Inputs[OLE DB Destination Input].ExternalColumns[weekday]"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[weekday]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Feed Date Data.Inputs[OLE DB Destination Input].Columns[monthname]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="monthname"
+                      externalMetadataColumnId="Package\Data Flow Task\Feed Date Data.Inputs[OLE DB Destination Input].ExternalColumns[monthname]"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[monthname]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Feed Date Data.Inputs[OLE DB Destination Input].Columns[day]"
+                      cachedDataType="decimal"
+                      cachedName="day"
+                      externalMetadataColumnId="Package\Data Flow Task\Feed Date Data.Inputs[OLE DB Destination Input].ExternalColumns[day]"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[day]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Feed Date Data.Inputs[OLE DB Destination Input].Columns[year]"
+                      cachedDataType="decimal"
+                      cachedName="year"
+                      externalMetadataColumnId="Package\Data Flow Task\Feed Date Data.Inputs[OLE DB Destination Input].ExternalColumns[year]"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[year]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Feed Date Data.Inputs[OLE DB Destination Input].Columns[month]"
+                      cachedDataType="decimal"
+                      cachedName="month"
+                      externalMetadataColumnId="Package\Data Flow Task\Feed Date Data.Inputs[OLE DB Destination Input].ExternalColumns[month]"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[month]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Feed Date Data.Inputs[OLE DB Destination Input].ExternalColumns[date_id]"
+                      dataType="i4"
+                      name="date_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Feed Date Data.Inputs[OLE DB Destination Input].ExternalColumns[year]"
+                      dataType="i4"
+                      name="year" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Feed Date Data.Inputs[OLE DB Destination Input].ExternalColumns[month]"
+                      dataType="i4"
+                      name="month" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Feed Date Data.Inputs[OLE DB Destination Input].ExternalColumns[day]"
+                      dataType="i4"
+                      name="day" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Feed Date Data.Inputs[OLE DB Destination Input].ExternalColumns[monthname]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="monthname" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Feed Date Data.Inputs[OLE DB Destination Input].ExternalColumns[weekday]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="weekday" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Feed Date Data.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\Feed Date Data.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Feed Date Data.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Feed Date Data.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Feed Date Data.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Feed Date Data.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Feed TimeStamp Data"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Feed TimeStamp Data"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Timestamp]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Feed TimeStamp Data.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-B595UD7\SQLEXPRESS.tweetsOLAPing]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-B595UD7\SQLEXPRESS.tweetsOLAPing]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Feed TimeStamp Data.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Feed TimeStamp Data.Inputs[OLE DB Destination Input].Columns[hour]"
+                      cachedDataType="decimal"
+                      cachedName="hour"
+                      externalMetadataColumnId="Package\Data Flow Task\Feed TimeStamp Data.Inputs[OLE DB Destination Input].ExternalColumns[hour]"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[hour]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Feed TimeStamp Data.Inputs[OLE DB Destination Input].Columns[minute]"
+                      cachedDataType="decimal"
+                      cachedName="minute"
+                      externalMetadataColumnId="Package\Data Flow Task\Feed TimeStamp Data.Inputs[OLE DB Destination Input].ExternalColumns[minute]"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[minute]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Feed TimeStamp Data.Inputs[OLE DB Destination Input].Columns[second]"
+                      cachedDataType="decimal"
+                      cachedName="second"
+                      externalMetadataColumnId="Package\Data Flow Task\Feed TimeStamp Data.Inputs[OLE DB Destination Input].ExternalColumns[second]"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[second]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Feed TimeStamp Data.Inputs[OLE DB Destination Input].ExternalColumns[ts_id]"
+                      dataType="i4"
+                      name="ts_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Feed TimeStamp Data.Inputs[OLE DB Destination Input].ExternalColumns[hour]"
+                      dataType="i4"
+                      name="hour" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Feed TimeStamp Data.Inputs[OLE DB Destination Input].ExternalColumns[minute]"
+                      dataType="i4"
+                      name="minute" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Feed TimeStamp Data.Inputs[OLE DB Destination Input].ExternalColumns[second]"
+                      dataType="i4"
+                      name="second" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Feed TimeStamp Data.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\Feed TimeStamp Data.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Feed TimeStamp Data.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Feed TimeStamp Data.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Feed TimeStamp Data.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Feed TimeStamp Data.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Feed Twitto MetaData"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Feed Twitto MetaData"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Twitto_MetaData]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Feed Twitto MetaData.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-B595UD7\SQLEXPRESS.tweetsOLAPing]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-B595UD7\SQLEXPRESS.tweetsOLAPing]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Feed Twitto MetaData.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Feed Twitto MetaData.Inputs[OLE DB Destination Input].Columns[user_activity]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="user_activity"
+                      externalMetadataColumnId="Package\Data Flow Task\Feed Twitto MetaData.Inputs[OLE DB Destination Input].ExternalColumns[user_activity]"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[user_activity]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Feed Twitto MetaData.Inputs[OLE DB Destination Input].Columns[user_category]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="user_category"
+                      externalMetadataColumnId="Package\Data Flow Task\Feed Twitto MetaData.Inputs[OLE DB Destination Input].ExternalColumns[user_category]"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[user_category]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Feed Twitto MetaData.Inputs[OLE DB Destination Input].ExternalColumns[usrmd_id]"
+                      dataType="i4"
+                      name="usrmd_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Feed Twitto MetaData.Inputs[OLE DB Destination Input].ExternalColumns[user_category]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="user_category" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Feed Twitto MetaData.Inputs[OLE DB Destination Input].ExternalColumns[user_activity]"
+                      codePage="1252"
+                      dataType="str"
+                      length="12"
+                      name="user_activity" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Feed Twitto MetaData.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\Feed Twitto MetaData.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Feed Twitto MetaData.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Feed Twitto MetaData.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Feed Twitto MetaData.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Feed Twitto MetaData.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Multicast"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="Multicast">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Multicast.Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Multicast.Outputs[Multicast Output 1]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
+                  synchronousInputId="Package\Data Flow Task\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Multicast.Outputs[Multicast Output 2]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 2"
+                  synchronousInputId="Package\Data Flow Task\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Multicast.Outputs[Multicast Output 3]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 3"
+                  synchronousInputId="Package\Data Flow Task\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Multicast.Outputs[Multicast Output 5]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 5"
+                  synchronousInputId="Package\Data Flow Task\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\twittos_csv_file"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="twittos_csv_file"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\twittos_csv_file.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[us_id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[us_id]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[us_id]"
+                      name="us_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ loc]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ loc]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ loc]"
+                      name=" loc"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ is_protected]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ is_protected]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ is_protected]"
+                      name=" is_protected"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ is_verified]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ is_verified]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ is_verified]"
+                      name=" is_verified"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ lang]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ lang]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ lang]"
+                      name=" lang"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ followers_count]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ followers_count]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ followers_count]"
+                      name=" followers_count"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ friends_count]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ friends_count]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ friends_count]"
+                      name=" friends_count"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ listed_count]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ listed_count]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ listed_count]"
+                      name=" listed_count"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ favourites_count]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ favourites_count]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ favourites_count]"
+                      name=" favourites_count"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ statuses_count]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ statuses_count]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ statuses_count]"
+                      name=" statuses_count"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ utc_offset]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ utc_offset]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ utc_offset]"
+                      name=" utc_offset"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ time_zone]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ time_zone]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ time_zone]"
+                      name=" time_zone"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ weekday]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ weekday]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ weekday]"
+                      name=" weekday"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ monthname]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ monthname]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ monthname]"
+                      name=" monthname"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ day]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ day]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ day]"
+                      name=" day"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ hour]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ hour]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ hour]"
+                      name=" hour"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ minute]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ minute]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ minute]"
+                      name=" minute"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ second]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ second]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ second]"
+                      name=" second"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ year]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ year]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ year]"
+                      name=" year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ month]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ month]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ month]"
+                      name=" month"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ user_activity]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ user_activity]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ user_activity]"
+                      name=" user_activity"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ user_category]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ user_category]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ user_category]"
+                      name=" user_category"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[us_id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="us_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ loc]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name=" loc" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ is_protected]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name=" is_protected" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ is_verified]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name=" is_verified" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ lang]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name=" lang" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ followers_count]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name=" followers_count" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ friends_count]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name=" friends_count" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ listed_count]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name=" listed_count" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ favourites_count]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name=" favourites_count" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ statuses_count]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name=" statuses_count" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ utc_offset]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name=" utc_offset" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ time_zone]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name=" time_zone" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ weekday]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name=" weekday" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ monthname]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name=" monthname" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ day]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name=" day" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ hour]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name=" hour" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ minute]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name=" minute" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ second]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name=" second" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ year]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name=" year" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ month]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name=" month" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ user_activity]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name=" user_activity" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].ExternalColumns[ user_category]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name=" user_category" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\twittos_csv_file_data_conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="twittos_csv_file_data_conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Inputs[Data Conversion Input].Columns[us_id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="us_id"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[us_id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Inputs[Data Conversion Input].Columns[ loc]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName=" loc"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ loc]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Inputs[Data Conversion Input].Columns[ is_protected]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName=" is_protected"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ is_protected]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Inputs[Data Conversion Input].Columns[ is_verified]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName=" is_verified"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ is_verified]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Inputs[Data Conversion Input].Columns[ lang]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName=" lang"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ lang]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Inputs[Data Conversion Input].Columns[ followers_count]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName=" followers_count"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ followers_count]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Inputs[Data Conversion Input].Columns[ friends_count]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName=" friends_count"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ friends_count]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Inputs[Data Conversion Input].Columns[ listed_count]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName=" listed_count"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ listed_count]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Inputs[Data Conversion Input].Columns[ favourites_count]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName=" favourites_count"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ favourites_count]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Inputs[Data Conversion Input].Columns[ statuses_count]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName=" statuses_count"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ statuses_count]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Inputs[Data Conversion Input].Columns[ utc_offset]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName=" utc_offset"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ utc_offset]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Inputs[Data Conversion Input].Columns[ time_zone]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName=" time_zone"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ time_zone]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Inputs[Data Conversion Input].Columns[ weekday]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName=" weekday"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ weekday]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Inputs[Data Conversion Input].Columns[ monthname]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName=" monthname"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ monthname]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Inputs[Data Conversion Input].Columns[ day]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName=" day"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ day]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Inputs[Data Conversion Input].Columns[ hour]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName=" hour"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ hour]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Inputs[Data Conversion Input].Columns[ minute]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName=" minute"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ minute]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Inputs[Data Conversion Input].Columns[ second]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName=" second"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ second]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Inputs[Data Conversion Input].Columns[ year]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName=" year"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ year]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Inputs[Data Conversion Input].Columns[ month]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName=" month"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ month]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Inputs[Data Conversion Input].Columns[ user_activity]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName=" user_activity"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ user_activity]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Inputs[Data Conversion Input].Columns[ user_category]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName=" user_category"
+                      lineageId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ user_category]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Data Flow Task\twittos_csv_file_data_conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[usr_key]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[usr_key]"
+                      name="usr_key"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[us_id]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[Copy of  loc]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[Copy of  loc]"
+                      name="Copy of  loc"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ loc]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[is_protected]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[is_protected]"
+                      name="is_protected"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ is_protected]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[is_verified]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[is_verified]"
+                      name="is_verified"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ is_verified]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[lang]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[lang]"
+                      name="lang"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ lang]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[followers_count]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[followers_count]"
+                      name="followers_count"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ followers_count]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[friends_count]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[friends_count]"
+                      name="friends_count"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ friends_count]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[listed_count]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[listed_count]"
+                      name="listed_count"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ listed_count]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[favourites_count]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[favourites_count]"
+                      name="favourites_count"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ favourites_count]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[statuses_count]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[statuses_count]"
+                      name="statuses_count"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ statuses_count]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[utc_offset]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[utc_offset]"
+                      name="utc_offset"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ utc_offset]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[time_zone]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[time_zone]"
+                      name="time_zone"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ time_zone]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[weekday]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[weekday]"
+                      name="weekday"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ weekday]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[monthname]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[monthname]"
+                      name="monthname"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ monthname]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[day]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[day]"
+                      name="day"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ day]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[hour]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[hour]"
+                      name="hour"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ hour]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[minute]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[minute]"
+                      name="minute"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ minute]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[second]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[second]"
+                      name="second"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ second]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[year]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[year]"
+                      name="year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ year]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[month]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[month]"
+                      name="month"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ month]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[user_activity]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[user_activity]"
+                      name="user_activity"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ user_activity]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[user_category]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output].Columns[user_category]"
+                      name="user_category"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output].Columns[ user_category]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Data Flow Task\twittos_csv_file_data_conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task.Paths[Data Conversion Output]"
+              endId="Package\Data Flow Task\Multicast.Inputs[Multicast Input 1]"
+              name="Data Conversion Output"
+              startId="Package\Data Flow Task\twittos_csv_file_data_conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Flat File Source Output]"
+              endId="Package\Data Flow Task\twittos_csv_file_data_conversion.Inputs[Data Conversion Input]"
+              name="Flat File Source Output"
+              startId="Package\Data Flow Task\twittos_csv_file.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Multicast Output 1]"
+              endId="Package\Data Flow Task\Feed Date Data.Inputs[OLE DB Destination Input]"
+              name="Multicast Output 1"
+              startId="Package\Data Flow Task\Multicast.Outputs[Multicast Output 1]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Multicast Output 2]"
+              endId="Package\Data Flow Task\Feed TimeStamp Data.Inputs[OLE DB Destination Input]"
+              name="Multicast Output 2"
+              startId="Package\Data Flow Task\Multicast.Outputs[Multicast Output 2]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Multicast Output 3]"
+              endId="Package\Data Flow Task\Feed Twitto MetaData.Inputs[OLE DB Destination Input]"
+              name="Multicast Output 3"
+              startId="Package\Data Flow Task\Multicast.Outputs[Multicast Output 3]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Data Flow Task"
+          TopLeft="266,156" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Data Flow Task\twittos_csv_file"
+          TopLeft="547,25" />
+        <NodeLayout
+          Size="234,42"
+          Id="Package\Data Flow Task\twittos_csv_file_data_conversion"
+          TopLeft="504,160" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Flat File Source Output]"
+          TopLeft="621.75,67">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,93"
+              Start="0,0"
+              End="0,85.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,85.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="120,42"
+          Id="Package\Data Flow Task\Multicast"
+          TopLeft="566,288" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Data Conversion Output]"
+          TopLeft="623.5,202">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,86"
+              Start="0,0"
+              End="0,78.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,78.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="152,42"
+          Id="Package\Data Flow Task\Feed Date Data"
+          TopLeft="268,383" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Multicast Output 1]"
+          TopLeft="598,330">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-254,53"
+              Start="0,0"
+              End="-254,45.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.4347826086957" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.4347826086957"
+                    Point2="0,18.4347826086957"
+                    Point3="-4,18.4347826086957" />
+                  <mssgle:LineSegment
+                    End="-250,18.4347826086957" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-250,18.4347826086957"
+                    Point2="-254,18.4347826086957"
+                    Point3="-254,22.4347826086957" />
+                  <mssgle:LineSegment
+                    End="-254,45.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="184,42"
+          Id="Package\Data Flow Task\Feed TimeStamp Data"
+          TopLeft="535,384" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Multicast Output 2]"
+          TopLeft="626.5,330">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,54"
+              Start="0,0"
+              End="0,46.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="183,42"
+          Id="Package\Data Flow Task\Feed Twitto MetaData"
+          TopLeft="832,385" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Multicast Output 3]"
+          TopLeft="654,330">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="269.5,55"
+              Start="0,0"
+              End="269.5,47.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.1304347826087" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.1304347826087"
+                    Point2="0,19.1304347826087"
+                    Point3="4,19.1304347826087" />
+                  <mssgle:LineSegment
+                    End="265.5,19.1304347826087" />
+                  <mssgle:CubicBezierSegment
+                    Point1="265.5,19.1304347826087"
+                    Point2="269.5,19.1304347826087"
+                    Point3="269.5,23.1304347826087" />
+                  <mssgle:LineSegment
+                    End="269.5,47.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Feed Date Data">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Feed TimeStamp Data">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Feed Twitto MetaData">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
