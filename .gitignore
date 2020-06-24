@@ -25,3 +25,4 @@ data/
 transformation/nlpjunk.py
 cleanSentiments.py
 cleanTweets.py
+batch_data/

@@ -6,13 +6,18 @@ import csv
 import concurrent.futures
 
 
+def loadto(data, optf):
+    with open(optf, 'a', newline='') as file:
+        writer = csv.writer(file, quoting=csv.QUOTE_NONNUMERIC, delimiter=',')
+        writer.writerow(data)
+
+def load_meta_data(optf):
+    md = 'tw_id,sentiment_score,sentiment_magnitude,sentiment_tag,content_type'
+    loadto(md.split(','),optf)
 
 def NLP_processing(api, optf, tw):
     csvd = [tw['id']]
     csvd.extend(api.process(tw))
-    with open(optf, 'a', newline='') as file:
-        writer = csv.writer(file, quoting=csv.QUOTE_NONNUMERIC, delimiter=',')
-        writer.writerow(csvd)
 
 def process(js,tweetspool):
     global start
@@ -29,8 +34,7 @@ def process(js,tweetspool):
             err.write(f"{tweetspool},{e}\n")
     try:
         if 'id_str' in tw.keys():
-            if not start and tw['id'] == 1018659967346208768: start =True
-            if start: NLP_processing(api, optf, tw)
+            NLP_processing(api, optf, tw)
     except Exception as e:
         with open(errf, 'a') as err:
             err.write(f"{tw['id']},{e}\n")
@@ -50,10 +54,10 @@ if __name__ == '__main__':
     srcdir = os.path.abspath(args[1])
     optf = os.path.abspath(args[2])
     errf = os.path.abspath(args[3])
-    global start
     global c
     c = 0
-    start = False
+
+    load_meta_data(optf)
     executeThreading()
 
 
