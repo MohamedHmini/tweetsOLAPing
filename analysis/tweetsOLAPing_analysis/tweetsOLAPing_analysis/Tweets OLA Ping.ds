@@ -6,7 +6,7 @@
   <ConnectionString>Provider=SQLNCLI11.1;Data Source=DESKTOP-B595UD7\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=tweetsOLAPing</ConnectionString>
   <ConnectionStringSecurity>Unchanged</ConnectionStringSecurity>
   <ImpersonationInfo>
-    <ImpersonationMode>ImpersonateCurrentUser</ImpersonationMode>
+    <ImpersonationMode>ImpersonateServiceAccount</ImpersonationMode>
     <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
   </ImpersonationInfo>
   <Timeout>PT0S</Timeout>
