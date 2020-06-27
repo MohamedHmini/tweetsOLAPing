@@ -48,3 +48,5 @@ class UserProcessor:
         csvus.append(self.getUserCategory(us))
         return csvus
     
+
+            

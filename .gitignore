@@ -27,3 +27,4 @@ cleanSentiments.py
 cleanTweets.py
 batch_data/
 users/
+!tweetsPOOLs.csv

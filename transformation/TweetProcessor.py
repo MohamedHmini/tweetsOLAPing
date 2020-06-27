@@ -15,10 +15,10 @@ class TweetProcesor:
         tweettype = 'normal-tweet'
         if tw['in_reply_to_screen_name'] != None:
             tweettype = 'response'
-        elif len(tw['entities']['user_mentions']) > 0:
-            tweettype = 'mentions'
         elif 'retweeted_status' in tw.keys():
             tweettype = 'retweet'
+        elif len(tw['entities']['user_mentions']) > 0:
+            tweettype = 'mentions'
 
         isquote = tw['is_quote_status']
         
