@@ -3,12 +3,13 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
-        <TargetServer>NT SERVICE\MSSQLServerOLAPService</TargetServer>
-        <TargetDatabase>tweetsOLAPing_analysis</TargetDatabase>
+        <TargetServer>localhost</TargetServer>
+        <TargetDatabase>tweetsOLAPing</TargetDatabase>
         <StartObject>
           <ObjectId></ObjectId>
           <ObjectType>Current</ObjectType>
         </StartObject>
+        <ProcessingOption>DoNotProcess</ProcessingOption>
       </Options>
     </Configuration>
   </Configurations>

@@ -1,0 +1,96 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>tweetsOLAPing</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>nswpZvpLf5lv70+1S+ieeGEhBfw=6/26/2020 11:21:54 PM6/26/2020 11:21:33 PM</TimeStamp>
+        <ID>
+          <String>TweetsOLAPing</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>6CV0MYwyCYd6vQKrv2x6/1h/MCE=6/27/2020 6:06:25 AM6/26/2020 11:22:29 PM</TimeStamp>
+        <ID>
+          <String>TweetsOLAPing_view</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>cw5yEmxAmW/FFpRab5bT3OB+/lU=6/26/2020 11:39:25 PM6/26/2020 11:22:50 PM</TimeStamp>
+        <ID>
+          <String>Tweet Meta Data</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>8SZd6PbbxwNAjU/tJOw4TreX/Fk=6/27/2020 6:40:44 AM6/26/2020 11:22:50 PM</TimeStamp>
+        <ID>
+          <String>Location</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>cNMRXERZteeI+5jqCEECF7gmltc=6/27/2020 12:08:07 AM6/26/2020 11:22:50 PM</TimeStamp>
+        <ID>
+          <String>Timestamp</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>/SqTFQSKNDnObJ4Ply8jQDn+zZU=6/27/2020 12:12:28 AM6/26/2020 11:22:50 PM</TimeStamp>
+        <ID>
+          <String>Twitto Meta Data</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>oYOdy8+F57oSIjrzjctmeVLjlqQ=6/27/2020 6:38:35 AM6/26/2020 11:22:50 PM</TimeStamp>
+        <ID>
+          <String>Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>2h5LO3j/bQdstyMgBIvf7jRcUvQ=6/27/2020 6:40:03 AM6/26/2020 11:22:50 PMLZj5H2xArQd+/HSUSkgiasJXY9Y=6/26/2020 11:23:22 PM6/26/2020 11:22:50 PM</TimeStamp>
+        <ID>
+          <String>TweetsOLAPing_cube</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>SseCsCNPACucwSy7iQYiSPRsja4=6/27/2020 6:40:33 AM6/27/2020 6:40:33 AMJqAN4ZDmhL/Rmx+riFhzR3wwOdE=6/27/2020 6:40:33 AM6/27/2020 6:40:33 AM</TimeStamp>
+        <ID>
+          <String>TweetsOLAPing_cube2</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>IcrX9sHfF77Fk4+ESjOSENtakNc=6/26/2020 11:21:15 PM6/26/2020 11:21:15 PM</TimeStamp>
+      <ID>
+        <String>tweetsOLAPing</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2020-06-27T05:40:57.01Z</LastDeployed>
+</DeploymentSnapshot>

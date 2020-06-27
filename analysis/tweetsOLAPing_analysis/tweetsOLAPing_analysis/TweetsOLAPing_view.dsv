@@ -1,0 +1,611 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="935de185-1b15-44ed-a63b-b1a7bb862c35" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>TweetsOLAPing_view</ID>
+  <Name>TweetsOLAPing_view</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout>
+              <dds>
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="25" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-10311" scrolltop="-64" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="85" x="30692" y="22331" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                  <font>
+                    <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+                  </font>
+                  <mouseicon>
+                    <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                  </mouseicon>
+                </diagram>
+                <layoutmanager>
+                  <ddsxmlobj />
+                </layoutmanager>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Date" left="20" top="290" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000043110000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Date" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Location" left="5446" top="20772" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3254" height="4842" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000b60c0000ea120000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Location" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Timestamp" left="5573" top="7400" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000f40d0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Timestamp" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Tweet" left="5393" top="13372" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3360" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000200d000088130000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Tweet" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Tweet_MetaData" left="11153" top="13372" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3784" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000c80e000088130000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Tweet_MetaData" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Twitto" left="5420" top="0" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="3307" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000eb0c000088130000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Twitto" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Twitto_MetaData" left="11127" top="925" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="5771" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e00008b1600004d0c0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Twitto_MetaData" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="2720" top="450" logicalid="16" controlid="16" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_Twitto_Date]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="6" sourceattachpoint="11" destattachpoint="12" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="3020" y="849" />
+                    <point x="4220" y="849" />
+                    <point x="4220" y="850" />
+                    <point x="5420" y="850" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="3338" top="4400" logicalid="17" controlid="17" masterid="0" hint1="0" hint2="0" width="2408" height="16993" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_Twitto_Location]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="6" sourceattachpoint="10" destattachpoint="26" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="5446" y="20993" />
+                    <point x="3638" y="20993" />
+                    <point x="3638" y="4700" />
+                    <point x="5420" y="4700" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="8427" top="1000" logicalid="18" controlid="18" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_Twitto_Twitto_MetaData]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="6" sourceattachpoint="22" destattachpoint="15" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="11127" y="1399" />
+                    <point x="9927" y="1399" />
+                    <point x="9927" y="1400" />
+                    <point x="8727" y="1400" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="5574" top="4700" logicalid="19" controlid="19" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_Twitto_Timestamp]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="6" sourceattachpoint="0" destattachpoint="3" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="5973" y="7400" />
+                    <point x="5973" y="5000" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="8453" top="13823" logicalid="20" controlid="20" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_Tweet_Tweet_MetaData]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="4" sourceattachpoint="16" destattachpoint="13" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="11153" y="14222" />
+                    <point x="8753" y="14222" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="5574" top="18072" logicalid="21" controlid="21" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_Tweet_Location]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="4" sourceattachpoint="2" destattachpoint="1" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="5973" y="20772" />
+                    <point x="5973" y="18372" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="5574" top="10473" logicalid="22" controlid="22" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_Tweet_Timestamp]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="4" sourceattachpoint="1" destattachpoint="0" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="5973" y="10972" />
+                    <point x="5973" y="13372" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="8453" top="3575" logicalid="23" controlid="23" masterid="0" hint1="0" hint2="0" width="5996" height="10397" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_Tweet_Twitto_MetaData]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="4" sourceattachpoint="1" destattachpoint="11" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="11262" y="4074" />
+                    <point x="11262" y="8723" />
+                    <point x="14149" y="8723" />
+                    <point x="14149" y="13672" />
+                    <point x="8753" y="13672" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="2221" top="4210" logicalid="24" controlid="24" masterid="0" hint1="0" hint2="0" width="4052" height="9462" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_Tweet_Date]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="4" sourceattachpoint="9" destattachpoint="0" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="2620" y="4709" />
+                    <point x="2620" y="9040" />
+                    <point x="5973" y="9040" />
+                    <point x="5973" y="13372" />
+                  </connector>
+                </ddscontrol>
+              </dds>
+</DiagramLayout>
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>-10311</DiagramViewPortLeft>
+            <DiagramViewPortTop>-64</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>85</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>TweetsOLAPing</DataSourceID>
+  <Schema>
+    <xs:schema id="TweetsOLAPing_view" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="TweetsOLAPing_view" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="793c068a-2182-4db9-a3dc-2e120779ad48">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Date" msprop:design-time-name="434a7883-8327-4e95-9820-5f8323628bce" msprop:FriendlyName="Date" msprop:DbSchemaName="dbo" msprop:DbTableName="Date" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="date_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="441f4126-9d90-4184-903f-970dc63f26ff" msprop:DbColumnName="date_id" msprop:FriendlyName="date_id" type="xs:int" />
+                  <xs:element name="date_key" msprop:design-time-name="702db316-f2b1-4cf8-a8ef-9df51897024a" msprop:DbColumnName="date_key" msprop:FriendlyName="date_key" type="xs:int" minOccurs="0" />
+                  <xs:element name="year" msprop:design-time-name="9b0b0d32-a566-4cbe-9cf3-5ea648397335" msprop:DbColumnName="year" msprop:FriendlyName="year" type="xs:int" minOccurs="0" />
+                  <xs:element name="month" msprop:design-time-name="fb2ba132-e5f1-4982-9dd8-1d4ee5afc1c0" msprop:DbColumnName="month" msprop:FriendlyName="month" type="xs:int" minOccurs="0" />
+                  <xs:element name="day" msprop:design-time-name="55fa4949-e2ca-4c6b-9165-597148d4315a" msprop:DbColumnName="day" msprop:FriendlyName="day" type="xs:int" minOccurs="0" />
+                  <xs:element name="monthname" msprop:design-time-name="bd2a73d6-3a17-43ca-bc29-8777a0eec650" msprop:DbColumnName="monthname" msprop:FriendlyName="monthname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="weekday" msprop:design-time-name="52f1f058-b957-49c3-a7b8-ef7cf2799c9a" msprop:DbColumnName="weekday" msprop:FriendlyName="weekday" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="fulldate" msprop:design-time-name="b1d0d3e8-8b9c-4376-9245-9c70c275e3f9" msprop:DbColumnName="fulldate" msprop:FriendlyName="fulldate" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Location" msprop:design-time-name="3747cdfa-3a44-423d-bf31-70bfe3799cd4" msprop:FriendlyName="Location" msprop:DbSchemaName="dbo" msprop:DbTableName="Location" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="loc_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="5dcd89c5-8ac4-4f50-98da-211d237ff6d7" msprop:DbColumnName="loc_id" msprop:FriendlyName="loc_id" type="xs:int" />
+                  <xs:element name="loc_key" msprop:design-time-name="89c2ad3f-1901-42a1-929e-55f3f7afdd5b" msprop:DbColumnName="loc_key" msprop:FriendlyName="loc_key" type="xs:int" />
+                  <xs:element name="place_type" msprop:design-time-name="f5dad481-f874-4d13-b0d1-2c00411e59e2" msprop:DbColumnName="place_type" msprop:FriendlyName="place_type" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="place_name" msprop:design-time-name="eedfb635-0268-4428-91c8-406c04e183de" msprop:DbColumnName="place_name" msprop:FriendlyName="place_name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="place_full_name" msprop:design-time-name="5e7de3d6-4c06-4232-bf8e-295173b38095" msprop:DbColumnName="place_full_name" msprop:FriendlyName="place_full_name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="country_code" msprop:design-time-name="d1f693da-859e-4e04-8574-7f826db94e6f" msprop:DbColumnName="country_code" msprop:FriendlyName="country_code" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="country" msprop:design-time-name="e9ff249b-4f8b-4920-91aa-85994b9ebeb5" msprop:DbColumnName="country" msprop:FriendlyName="country" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="utc_offset" msprop:design-time-name="c0018583-adab-4912-ac40-14e0e5caa895" msprop:DbColumnName="utc_offset" msprop:FriendlyName="utc_offset" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="zone_time" msprop:design-time-name="024e7003-cda7-4207-82d2-66378fe53aea" msprop:DbColumnName="zone_time" msprop:FriendlyName="zone_time" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Timestamp" msprop:design-time-name="3af3de58-40da-4116-802a-880d8b31ddc8" msprop:FriendlyName="Timestamp" msprop:DbSchemaName="dbo" msprop:DbTableName="Timestamp" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ts_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="c441e660-0c1c-45c5-9e7d-b130605f58ea" msprop:DbColumnName="ts_id" msprop:FriendlyName="ts_id" type="xs:int" />
+                  <xs:element name="ts_key" msprop:design-time-name="414271b7-3b9a-4784-b562-a42fb277c2f4" msprop:DbColumnName="ts_key" msprop:FriendlyName="ts_key" type="xs:int" minOccurs="0" />
+                  <xs:element name="hour" msprop:design-time-name="1a9f66ab-b314-4eee-b4df-c939773be1cf" msprop:DbColumnName="hour" msprop:FriendlyName="hour" type="xs:int" minOccurs="0" />
+                  <xs:element name="minute" msprop:design-time-name="55366a33-79e6-4632-841a-a5ec45c43e55" msprop:DbColumnName="minute" msprop:FriendlyName="minute" type="xs:int" minOccurs="0" />
+                  <xs:element name="second" msprop:design-time-name="b732f1e6-7766-4877-b13e-a944dc6eb7ad" msprop:DbColumnName="second" msprop:FriendlyName="second" type="xs:int" minOccurs="0" />
+                  <xs:element name="fulltime" msprop:design-time-name="0ac4c4bd-f676-4b4c-941a-16816e166265" msprop:DbColumnName="fulltime" msprop:FriendlyName="fulltime" type="xs:anyType" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Tweet" msprop:design-time-name="c17b70f9-fb8e-4171-bad9-61512397857d" msprop:FriendlyName="Tweet" msprop:DbSchemaName="dbo" msprop:DbTableName="Tweet" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="tweet_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="aba62639-1947-404f-9db8-13fec8f62205" msprop:DbColumnName="tweet_id" msprop:FriendlyName="tweet_id" type="xs:int" />
+                  <xs:element name="twmd_id" msprop:design-time-name="f1de7b65-ed10-4352-9256-4dcc857d5cd4" msprop:DbColumnName="twmd_id" msprop:FriendlyName="twmd_id" type="xs:int" />
+                  <xs:element name="usrmd_id" msprop:design-time-name="6409d2ad-d60e-4a21-9c32-f8bfb1cc2a69" msprop:DbColumnName="usrmd_id" msprop:FriendlyName="usrmd_id" type="xs:int" />
+                  <xs:element name="date_id" msprop:design-time-name="848ec0f7-d97c-4e62-91b7-0c42345a8a40" msprop:DbColumnName="date_id" msprop:FriendlyName="date_id" type="xs:int" />
+                  <xs:element name="ts_id" msprop:design-time-name="7bb93818-0aa3-418a-95f6-9c13113b9945" msprop:DbColumnName="ts_id" msprop:FriendlyName="ts_id" type="xs:int" />
+                  <xs:element name="loc_id" msprop:design-time-name="e44c1dfa-45ac-4cc9-9de9-84d6f02a1201" msprop:DbColumnName="loc_id" msprop:FriendlyName="loc_id" type="xs:int" />
+                  <xs:element name="tweet_key" msprop:design-time-name="0f05bf9c-eed9-40f9-8761-631e97653e96" msprop:DbColumnName="tweet_key" msprop:FriendlyName="tweet_key">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="favorite_count" msprop:design-time-name="e8a55e6d-c960-4657-8971-f63364ec80e8" msprop:DbColumnName="favorite_count" msprop:FriendlyName="favorite_count" type="xs:int" minOccurs="0" />
+                  <xs:element name="retweet_count" msprop:design-time-name="6a4145d1-faa0-4708-a397-fbe3528c3cac" msprop:DbColumnName="retweet_count" msprop:FriendlyName="retweet_count" type="xs:int" minOccurs="0" />
+                  <xs:element name="reply_count" msprop:design-time-name="d2c8e0a7-9631-4864-9afe-bea9247c1528" msprop:DbColumnName="reply_count" msprop:FriendlyName="reply_count" type="xs:int" minOccurs="0" />
+                  <xs:element name="sentiment_score" msprop:design-time-name="08665117-29ad-4b74-a25f-8560a29af8a9" msprop:DbColumnName="sentiment_score" msprop:FriendlyName="sentiment_score" type="xs:double" minOccurs="0" />
+                  <xs:element name="magnitude_score" msprop:design-time-name="075ba1cf-21c7-4940-b487-659325ed103a" msprop:DbColumnName="magnitude_score" msprop:FriendlyName="magnitude_score" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Tweet_MetaData" msprop:design-time-name="1869765c-c0b4-49ec-a355-1be9fe528fc1" msprop:FriendlyName="Tweet_MetaData" msprop:DbSchemaName="dbo" msprop:DbTableName="Tweet_MetaData" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="twmd_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="06931d7c-90ac-4989-b47e-edf7f762b62d" msprop:DbColumnName="twmd_id" msprop:FriendlyName="twmd_id" type="xs:int" />
+                  <xs:element name="twmd_key" msprop:design-time-name="4850accd-f243-440a-9fc7-7346fd293b0a" msprop:DbColumnName="twmd_key" msprop:FriendlyName="twmd_key" type="xs:int" minOccurs="0" />
+                  <xs:element name="tweet_type" msprop:design-time-name="85c29b8f-e466-4299-a22b-0eae121c1d5b" msprop:DbColumnName="tweet_type" msprop:FriendlyName="tweet_type" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="is_quote" msprop:design-time-name="5967aba2-8c60-4684-ba61-13c2f9fe092d" msprop:DbColumnName="is_quote" msprop:FriendlyName="is_quote" type="xs:boolean" minOccurs="0" />
+                  <xs:element name="lang" msprop:design-time-name="f98d4710-dc3e-4bc9-9948-b47b1d0af3a0" msprop:DbColumnName="lang" msprop:FriendlyName="lang" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="8" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="source" msprop:design-time-name="185d8c89-a13c-43e0-b9f3-e9b6595f1f6e" msprop:DbColumnName="source" msprop:FriendlyName="source" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="media_type" msprop:design-time-name="550de2a4-213f-49c3-b58f-d1872520b914" msprop:DbColumnName="media_type" msprop:FriendlyName="media_type" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="is_truncated" msprop:design-time-name="a9690330-7be1-4aad-a97a-44b74dc13475" msprop:DbColumnName="is_truncated" msprop:FriendlyName="is_truncated" type="xs:boolean" minOccurs="0" />
+                  <xs:element name="is_possibly_sensitive" msprop:design-time-name="64d9c1e8-a458-4bac-bd67-e3ea83f99beb" msprop:DbColumnName="is_possibly_sensitive" msprop:FriendlyName="is_possibly_sensitive" type="xs:boolean" minOccurs="0" />
+                  <xs:element name="has_hashtags" msprop:design-time-name="5166d318-5570-40c4-a768-f56a69f2c985" msprop:DbColumnName="has_hashtags" msprop:FriendlyName="has_hashtags" type="xs:boolean" minOccurs="0" />
+                  <xs:element name="has_urls" msprop:design-time-name="8387dab6-a5be-4b98-bc41-9da7ac200514" msprop:DbColumnName="has_urls" msprop:FriendlyName="has_urls" type="xs:boolean" minOccurs="0" />
+                  <xs:element name="has_user_mentions" msprop:design-time-name="efc1b6e8-af76-4277-8a23-f837338eef05" msprop:DbColumnName="has_user_mentions" msprop:FriendlyName="has_user_mentions" type="xs:boolean" minOccurs="0" />
+                  <xs:element name="has_symbols" msprop:design-time-name="567168a1-4960-4fc8-b32d-3d150ae60e14" msprop:DbColumnName="has_symbols" msprop:FriendlyName="has_symbols" type="xs:boolean" minOccurs="0" />
+                  <xs:element name="sentiment_tag" msprop:design-time-name="de4b10e4-788c-4ed2-95e2-81a61e7a472d" msprop:DbColumnName="sentiment_tag" msprop:FriendlyName="sentiment_tag" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="content_type" msprop:design-time-name="c313563b-fda5-44af-b94f-9378c634e662" msprop:DbColumnName="content_type" msprop:FriendlyName="content_type" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Twitto" msprop:design-time-name="db6f0526-f7d7-4c84-b6eb-446107f1ca9a" msprop:FriendlyName="Twitto" msprop:DbSchemaName="dbo" msprop:DbTableName="Twitto" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="usr_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="b547501d-1787-4877-82b9-0d91f8028c07" msprop:DbColumnName="usr_id" msprop:FriendlyName="usr_id" type="xs:int" />
+                  <xs:element name="usr_key" msprop:design-time-name="30383386-31d8-4bab-8ae8-9e9c40f2f593" msprop:DbColumnName="usr_key" msprop:FriendlyName="usr_key">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="usrmd_id" msprop:design-time-name="335c4737-2686-4405-ad5e-4afac1ee820f" msprop:DbColumnName="usrmd_id" msprop:FriendlyName="usrmd_id" type="xs:int" minOccurs="0" />
+                  <xs:element name="date_id" msprop:design-time-name="a8e10152-f0e5-419c-ba32-d7b71843f644" msprop:DbColumnName="date_id" msprop:FriendlyName="date_id" type="xs:int" minOccurs="0" />
+                  <xs:element name="ts_id" msprop:design-time-name="e00d30af-26d8-4950-a75d-af24f6171625" msprop:DbColumnName="ts_id" msprop:FriendlyName="ts_id" type="xs:int" minOccurs="0" />
+                  <xs:element name="followers_count" msprop:design-time-name="82fdfa17-a0b4-4aec-8e9f-a6f0aaf1202c" msprop:DbColumnName="followers_count" msprop:FriendlyName="followers_count" type="xs:int" minOccurs="0" />
+                  <xs:element name="friends_count" msprop:design-time-name="867b82a8-f615-4376-8249-8af7003d9b6b" msprop:DbColumnName="friends_count" msprop:FriendlyName="friends_count" type="xs:int" minOccurs="0" />
+                  <xs:element name="listed_count" msprop:design-time-name="a90b9eb1-1d81-4248-a956-dfff1d7b2a4e" msprop:DbColumnName="listed_count" msprop:FriendlyName="listed_count" type="xs:int" minOccurs="0" />
+                  <xs:element name="favourites_count" msprop:design-time-name="b2ddf626-ef94-49c1-96c9-30b9f31070d1" msprop:DbColumnName="favourites_count" msprop:FriendlyName="favourites_count" type="xs:int" minOccurs="0" />
+                  <xs:element name="statuses_count" msprop:design-time-name="f865c7b6-3a4d-4a47-a5b0-fb00f08f9c9d" msprop:DbColumnName="statuses_count" msprop:FriendlyName="statuses_count" type="xs:int" minOccurs="0" />
+                  <xs:element name="is_protected" msprop:design-time-name="f362b53a-92d1-4d6f-a446-d5ca1a85a3a8" msprop:DbColumnName="is_protected" msprop:FriendlyName="is_protected" type="xs:boolean" minOccurs="0" />
+                  <xs:element name="is_verified" msprop:design-time-name="b514c969-447f-4256-aeca-8258e8c36335" msprop:DbColumnName="is_verified" msprop:FriendlyName="is_verified" type="xs:boolean" minOccurs="0" />
+                  <xs:element name="loc_id" msprop:design-time-name="275f5ded-81ec-49c1-9e13-ee56c33b34fb" msprop:DbColumnName="loc_id" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Twitto_MetaData" msprop:design-time-name="fbe96189-1112-45e7-b825-36875ddb140d" msprop:FriendlyName="Twitto_MetaData" msprop:DbSchemaName="dbo" msprop:DbTableName="Twitto_MetaData" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="usrmd_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="2f507b27-51f7-4c03-9589-eda8c3d91eee" msprop:DbColumnName="usrmd_id" msprop:FriendlyName="usrmd_id" type="xs:int" />
+                  <xs:element name="usrmd_key" msprop:design-time-name="8f87e40d-c539-401a-86c7-7febe8c5b1d8" msprop:DbColumnName="usrmd_key" msprop:FriendlyName="usrmd_key" type="xs:int" minOccurs="0" />
+                  <xs:element name="user_category" msprop:design-time-name="929b9411-bbed-4b20-a053-b09fa48e2f78" msprop:DbColumnName="user_category" msprop:FriendlyName="user_category" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="25" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="user_activity" msprop:design-time-name="05849bbb-a2b4-4b2d-ad2e-151a33c53367" msprop:DbColumnName="user_activity" msprop:FriendlyName="user_activity" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="12" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="lang" msprop:design-time-name="08a23548-17f7-4d70-9ce3-16b9c75e9c0e" msprop:DbColumnName="lang" msprop:FriendlyName="lang" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="8" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Date" />
+          <xs:field xpath="date_id" />
+        </xs:unique>
+        <xs:unique name="dbo_Location_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Location" />
+          <xs:field xpath="loc_id" />
+        </xs:unique>
+        <xs:unique name="dbo_Timestamp_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Timestamp" />
+          <xs:field xpath="ts_id" />
+        </xs:unique>
+        <xs:unique name="dbo_Tweet_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Tweet" />
+          <xs:field xpath="tweet_key" />
+        </xs:unique>
+        <xs:unique name="dbo_Tweet_MetaData_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Tweet_MetaData" />
+          <xs:field xpath="twmd_id" />
+        </xs:unique>
+        <xs:unique name="dbo_Twitto_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Twitto" />
+          <xs:field xpath="usr_id" />
+        </xs:unique>
+        <xs:unique name="dbo_Twitto_MetaData_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Twitto_MetaData" />
+          <xs:field xpath="usrmd_id" />
+        </xs:unique>
+        <xs:keyref name="FK_Twitto_Location" refer="dbo_Location_Constraint1">
+          <xs:selector xpath=".//dbo_Twitto" />
+          <xs:field xpath="loc_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_Twitto_Date" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Twitto" />
+          <xs:field xpath="date_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_Twitto_Timestamp" refer="dbo_Timestamp_Constraint1">
+          <xs:selector xpath=".//dbo_Twitto" />
+          <xs:field xpath="ts_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_Twitto_Twitto_MetaData" refer="dbo_Twitto_MetaData_Constraint1">
+          <xs:selector xpath=".//dbo_Twitto" />
+          <xs:field xpath="usrmd_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_Tweet_Tweet_MetaData" refer="dbo_Tweet_MetaData_Constraint1">
+          <xs:selector xpath=".//dbo_Tweet" />
+          <xs:field xpath="twmd_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_Tweet_Location" refer="dbo_Location_Constraint1">
+          <xs:selector xpath=".//dbo_Tweet" />
+          <xs:field xpath="loc_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_Tweet_Timestamp" refer="dbo_Timestamp_Constraint1">
+          <xs:selector xpath=".//dbo_Tweet" />
+          <xs:field xpath="ts_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_Tweet_Twitto_MetaData" refer="dbo_Twitto_MetaData_Constraint1">
+          <xs:selector xpath=".//dbo_Tweet" />
+          <xs:field xpath="usrmd_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_Tweet_Date" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Tweet" />
+          <xs:field xpath="date_id" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <TweetsOLAPing_view xmlns="" />
+  </Schema>
+</DataSourceView>

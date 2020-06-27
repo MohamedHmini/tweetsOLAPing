@@ -1,0 +1,575 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e59755b5-1315-40e0-8ec4-9955587c861b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>TweetsOLAPing_cube2</ID>
+  <Name>TweetsOLAPing_cube2</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="d396d7a9-4840-4524-917b-362d2cc6cd3f">
+      <ID>Tweet Meta Data</ID>
+      <Name>Tweet Meta Data</Name>
+      <DimensionID>Tweet Meta Data</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d5039fef-b08d-4dc1-a4c1-effc40cfe8d4">
+          <AttributeID>Twmd Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ac95f34e-8a53-4da1-8883-e4ccd6e23435">
+          <AttributeID>Twmd Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4b2994b5-cc4e-422f-97c6-fa24d04d0ef7">
+          <AttributeID>Tweet Type</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0fd8d225-1104-48bd-afdf-27397e8874ed">
+          <AttributeID>Is Quote</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b1891995-9b20-447a-a234-573696ea49fc">
+          <AttributeID>Lang</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5b9fc656-b657-4a3d-a086-19bf99263a67">
+          <AttributeID>Source</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="952d6bdf-030d-41e4-946d-909fae022923">
+          <AttributeID>Media Type</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3a34c741-82af-415e-8cba-99c8931737ab">
+          <AttributeID>Is Truncated</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="95718b0e-32c6-4b41-bcbd-5ad1ce4568b1">
+          <AttributeID>Is Possibly Sensitive</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="22489dd6-0d97-462a-ad5c-2817633d4628">
+          <AttributeID>Has Hashtags</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0e321d95-99f0-41b3-8f13-fe41e6009b6a">
+          <AttributeID>Has Urls</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="701ffee4-20a6-4585-b058-fbdebe1b4e13">
+          <AttributeID>Has User Mentions</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8c47407d-bb76-4a45-9219-ae2bf9c65d99">
+          <AttributeID>Has Symbols</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1cfe6596-93eb-4a67-828d-12c6e7e924c4">
+          <AttributeID>Sentiment Tag</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1909377b-510a-410d-9941-11faf4a9c490">
+          <AttributeID>Content Type</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="2fac3b58-39a5-4a3b-a1ea-840032afc58a">
+      <ID>Location</ID>
+      <Name>Location</Name>
+      <DimensionID>Location</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="3b1c50a5-a766-46e1-92a3-10b4755842ba">
+          <AttributeID>Loc Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8bbbda66-f33d-4b8e-baf6-75ca2d930d66">
+          <AttributeID>Loc Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="66a36241-c9f4-4ff6-b6a5-1e75b762eacc">
+          <AttributeID>Place Type</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a7e194b7-0cf5-4788-979f-f0e13b9c0365">
+          <AttributeID>Place Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="32ec6c77-008d-4ebf-8033-633311736a41">
+          <AttributeID>Place Full Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3735035b-8e1a-45ee-8fc5-b9d2725b1740">
+          <AttributeID>Country Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8a0308f1-d5e0-428e-b976-62b67bb4bec0">
+          <AttributeID>Country</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="779d5f89-3df5-49e4-b401-818a3ff7bd75">
+          <AttributeID>Utc Offset</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="32d5020e-357d-4dc0-ba50-42af2d8ef1c0">
+          <AttributeID>Zone Time</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="87e9d88e-8c51-49d1-ba18-fbc2df2f8185">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="aee8b2aa-146d-454f-b4e9-eb1469ec0737">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="e427b21d-2088-4fa9-93e1-202bbf73ff10">
+          <HierarchyID>Hierarchy 1 1</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="983aa4d9-8f62-406a-b8c9-b6266b599e45">
+      <ID>Timestamp</ID>
+      <Name>Timestamp</Name>
+      <DimensionID>Timestamp</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="2312918b-6cf7-49f8-bf39-ab1f57f4fcf6">
+          <AttributeID>Ts Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7ca39832-0ec4-488c-bcec-8ab619318d9f">
+          <AttributeID>Ts Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="81c345cf-28bd-4c99-9187-16717b017c99">
+          <AttributeID>Hour</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e0ff0d85-d6ed-4430-b2a5-fda94966da9a">
+          <AttributeID>Minute</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0cfe55c7-2fed-4480-a5f7-cb8725dfcc44">
+          <AttributeID>Second</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e2c62575-091d-447c-9733-751a0d79fbe0">
+          <AttributeID>Fulltime</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="d33950f8-c63c-4e0a-82d5-28f620204b72">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="4359260c-f9cf-4765-83cc-c74c4bb38ee4">
+      <ID>Twitto Meta Data</ID>
+      <Name>Twitto Meta Data</Name>
+      <DimensionID>Twitto Meta Data</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="3629fa42-5a38-4342-9579-786fbd60a0b7">
+          <AttributeID>Usrmd Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2c0ccb78-3e09-44e4-a3fa-ea014a171c6c">
+          <AttributeID>Usrmd Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4e152a67-628f-4bb1-b8cf-e38ad01d2fb1">
+          <AttributeID>User Category</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7cece59c-fbcc-4c3a-8d9b-426de2c1f68d">
+          <AttributeID>User Activity</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ab347b69-3b5d-47e9-af78-806b1728be43">
+          <AttributeID>Lang</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="8da70717-8e68-4891-aa3d-8e0e946fc08f">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="9574f439-42ac-4ecb-b99c-beb808913fe6">
+      <ID>Date</ID>
+      <Name>Date</Name>
+      <DimensionID>Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="85255e5f-4798-4d49-bb36-4be51c9f2592">
+          <AttributeID>Date Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="84904cea-f077-4452-9adf-e8c80eb9a905">
+          <AttributeID>Date Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a0a57862-8e62-47ef-a051-e7d207367a2f">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0e4c0f5d-7d4d-4769-95b5-05fd83000dd8">
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6c9ce75c-24cf-4026-8dbb-fad266d886a9">
+          <AttributeID>Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b03a7002-e0f1-4132-bc1a-8d30cb9dfe9d">
+          <AttributeID>Monthname</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ea482347-7a2e-415a-ae15-2b2c085adecc">
+          <AttributeID>Weekday</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="28211c46-6406-4f80-8277-9d3818f765c3">
+          <AttributeID>Fulldate</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="e51ab8b6-b305-4be8-8478-4dce60959e26">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="d57d50d0-3c22-40ac-8a7b-7007f5b4756a">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="6d3fd7ac-6866-4a11-95ea-aaa4d4d8fc5d">
+      <ID>Tweet</ID>
+      <Name>Tweet</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="b5df271d-b314-4c7e-8982-8053905a099b">
+          <ID>Favorite Count</ID>
+          <Name>Favorite Count</Name>
+          <Source dwd:design-time-name="411d3292-87b2-4eba-9c5b-20e50b0788c2">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a16d09a6-5c78-462e-9e32-4c10f88cd374">
+              <TableID>dbo_Tweet</TableID>
+              <ColumnID>favorite_count</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="11883958-30d0-4e80-beaf-b3479be6a4f2">
+          <ID>Retweet Count</ID>
+          <Name>Retweet Count</Name>
+          <Source dwd:design-time-name="dc2f6543-c7fc-4305-95a7-37037dc2fcb0">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ff8b2f54-aef5-494a-a2ff-0dd92a76e33c">
+              <TableID>dbo_Tweet</TableID>
+              <ColumnID>retweet_count</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3b5e1abf-cbd9-4794-a659-a63933b27c77">
+          <ID>Reply Count</ID>
+          <Name>Reply Count</Name>
+          <Source dwd:design-time-name="59e823fd-172b-4bc4-9d6e-af148df54e91">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="206a614a-297f-4411-80e8-bc7b96bd7d67">
+              <TableID>dbo_Tweet</TableID>
+              <ColumnID>reply_count</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="fbacf84a-d0ce-4b55-993c-a39725759472">
+          <ID>Sentiment Score</ID>
+          <Name>Sentiment Score</Name>
+          <Source dwd:design-time-name="2ad1fb01-5996-4c9c-941a-83fc604ea57b">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8135bf12-2c7a-4732-837b-099f73b35e45">
+              <TableID>dbo_Tweet</TableID>
+              <ColumnID>sentiment_score</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d504b762-61f4-4851-8eb4-1008e8ca6e46">
+          <ID>Magnitude Score</ID>
+          <Name>Magnitude Score</Name>
+          <Source dwd:design-time-name="7dbc6d14-cb19-420d-b5f1-4f14f714c8af">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a5bcca92-9f3f-47c8-a4f1-c5a0d7cba919">
+              <TableID>dbo_Tweet</TableID>
+              <ColumnID>magnitude_score</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="63399c2c-768a-4726-b37e-5901cd10426b">
+          <ID>Tweet Count</ID>
+          <Name>Tweet Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="f453a8b9-ff4a-49b7-b603-6bd7104599df">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="80b7e80a-79d0-4dd3-9719-aebbf8f6b3aa">
+              <TableID>dbo_Tweet</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e084e3ee-5de5-4838-9d24-52f4d849573d">
+          <CubeDimensionID>Tweet Meta Data</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="884e7f10-7f60-43c4-8c0a-ceef16dd2674">
+              <AttributeID>Twmd Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="96a8a5e9-9c17-42c6-ab5a-b1f7fb9f0552">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="90363a5f-9525-4eae-a008-4326d8cf3963">
+                    <TableID>dbo_Tweet</TableID>
+                    <ColumnID>twmd_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="eb558dae-ba4c-4812-8850-408b092e9796">
+          <CubeDimensionID>Location</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ec2d83cf-f601-4f64-b8a4-0f3f1890e83f">
+              <AttributeID>Loc Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="41efd797-7ece-4487-b67c-c92c8ff1b27c">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="acef09c3-57cb-42e7-8846-275e88e707e8">
+                    <TableID>dbo_Tweet</TableID>
+                    <ColumnID>loc_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a796b238-f89c-4ff5-928a-192f98ddba46">
+          <CubeDimensionID>Timestamp</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1628b4a7-1ae2-4760-8e80-b065baf47d65">
+              <AttributeID>Ts Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="18ed33cf-1eb1-4717-991a-7436fbbf48de">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="60aa83c8-cae0-48e9-aa04-fc9219f0586d">
+                    <TableID>dbo_Tweet</TableID>
+                    <ColumnID>ts_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1bcd0f71-db39-47e7-ad36-27f5c6f0df4d">
+          <CubeDimensionID>Twitto Meta Data</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7db85ce1-92cc-4ff8-b9e0-fdfd4167d80f">
+              <AttributeID>Usrmd Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="86d5f091-8a29-4900-91bf-76e9e1572f28">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1e6e39bd-7bad-4f30-9d8c-927444e211c8">
+                    <TableID>dbo_Tweet</TableID>
+                    <ColumnID>usrmd_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f5ac83f0-0332-4200-8651-f22536e54977">
+          <CubeDimensionID>Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0e757870-d878-449d-815b-912d5513c06c">
+              <AttributeID>Date Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8075a893-545c-4ff9-b481-802e4561708f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="73c51f8a-507f-4c1b-8ab0-6f07f3c510e6">
+                    <TableID>dbo_Tweet</TableID>
+                    <ColumnID>date_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="b1dfd1fa-0d0b-4972-8dca-20ec7368bb7a">
+      <ID>Twitto</ID>
+      <Name>Twitto</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="0ec1f126-bc3e-4985-8115-dd790edcf7c9">
+          <ID>Followers Count</ID>
+          <Name>Followers Count</Name>
+          <Source dwd:design-time-name="cda8e9eb-24d7-47b3-8dbb-85a418b02eb5">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="fded2709-dd6a-4f26-8daa-bf5e35b63d6d">
+              <TableID>dbo_Twitto</TableID>
+              <ColumnID>followers_count</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="32b49c63-4d9a-4862-99d0-b9480dae661f">
+          <ID>Friends Count</ID>
+          <Name>Friends Count</Name>
+          <Source dwd:design-time-name="e5369775-b4ad-402c-a1a4-af6e496bc7c3">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e1a9ce3a-6575-4847-840d-b1fcd4f412e0">
+              <TableID>dbo_Twitto</TableID>
+              <ColumnID>friends_count</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="eda3b628-69c9-4bbb-81bd-e0d1034afd2c">
+          <ID>Listed Count</ID>
+          <Name>Listed Count</Name>
+          <Source dwd:design-time-name="5adb3399-4005-4530-92a5-2ee82655f555">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="82ae00c4-2fba-463e-94cb-34cf30da3408">
+              <TableID>dbo_Twitto</TableID>
+              <ColumnID>listed_count</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0ea1f96a-5e26-40d9-982f-85eeaa06fd3a">
+          <ID>Favourites Count</ID>
+          <Name>Favourites Count</Name>
+          <Source dwd:design-time-name="59698c66-0160-492c-8548-19dd12946513">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6707a4df-95e6-40bd-912c-3889337b378f">
+              <TableID>dbo_Twitto</TableID>
+              <ColumnID>favourites_count</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a46c7081-3cba-4e7a-b141-9dde4ab7a064">
+          <ID>Statuses Count</ID>
+          <Name>Statuses Count</Name>
+          <Source dwd:design-time-name="5349b7b6-bca4-4ecf-831b-bbb04ac8d961">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6672c290-6282-40cb-a0b8-64a07220a024">
+              <TableID>dbo_Twitto</TableID>
+              <ColumnID>statuses_count</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="038ce783-8edb-4c82-9154-b2d92f664725">
+          <ID>Twitto Count</ID>
+          <Name>Twitto Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="ddd6c906-1364-44ff-8fc2-385224675af5">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="34921ff6-360a-401a-bdc7-f573cbe579fe">
+              <TableID>dbo_Twitto</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6379ffcc-f7e1-422c-bf2a-ddc34cbe1021">
+          <CubeDimensionID>Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e309f101-6936-48fe-9170-1b93095f37c4">
+              <AttributeID>Date Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="60873eb0-2d4c-48f5-8798-8cdf73bc1bfb">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a29a08b4-ec32-4b83-a169-c67afbea3e4e">
+                    <TableID>dbo_Twitto</TableID>
+                    <ColumnID>date_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9ccaf37d-7d51-4063-bd6a-f20ea459469e">
+          <CubeDimensionID>Location</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e4175a8e-2569-49e4-a34f-0ceebed9a94f">
+              <AttributeID>Loc Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="cb8b4e56-7f7c-4359-a457-d60ea417b5fb">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2522ffd8-d26b-486d-92b3-88b96deff3f8">
+                    <TableID>dbo_Twitto</TableID>
+                    <ColumnID>loc_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="41cc0d6b-427d-47d1-a3e6-84819803fdfd">
+          <CubeDimensionID>Twitto Meta Data</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1528e498-d960-4537-9f28-1c1dd5e54675">
+              <AttributeID>Usrmd Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3c886cce-54eb-4d6b-ab3a-b3338110d4fd">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2e514717-7ccc-420a-8a77-09937ad0b44e">
+                    <TableID>dbo_Twitto</TableID>
+                    <ColumnID>usrmd_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e00a77d1-a153-4fa6-81eb-ffe6049322e5">
+          <CubeDimensionID>Timestamp</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="438476eb-f2af-42bd-a45c-da161aa22aa0">
+              <AttributeID>Ts Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f7f08263-1388-46be-bc2c-918dd26cb84a">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0443301d-8126-4463-8f5d-28d7fd0b70a6">
+                    <TableID>dbo_Twitto</TableID>
+                    <ColumnID>ts_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="c1314c97-34a5-494a-bd51-908cbfa327ac">
+    <DataSourceViewID>TweetsOLAPing_view</DataSourceViewID>
+  </Source>
+</Cube>

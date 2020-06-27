@@ -20,13 +20,6 @@ def NLP_processing(api, optf, tw):
     csvd.extend(api.process(tw))
 
 def process(js,tweetspool):
-    global start
-    global c
-    if c == 5000:
-        print(tweetspool)
-        c = 0
-    else:
-        c+=1
     try:
         tw = json.loads(js)
     except Exception as e:
@@ -54,8 +47,6 @@ if __name__ == '__main__':
     srcdir = os.path.abspath(args[1])
     optf = os.path.abspath(args[2])
     errf = os.path.abspath(args[3])
-    global c
-    c = 0
 
     load_meta_data(optf)
     executeThreading()

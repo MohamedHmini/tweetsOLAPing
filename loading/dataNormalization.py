@@ -5,7 +5,6 @@ import concurrent.futures
 
 
 
-
 def loadto(data, srcf):
     with open(srcf, 'a', newline='') as file:
         writer = csv.writer(file, delimiter=',')
@@ -30,7 +29,7 @@ def processTwittos(usr, counter, outd):
 # us_id, loc, is_protected, is_verified, lang, followers_count, friends_count, listed_count, favourites_count, statuses_count, 
 # utc_offset, time_zone, weekday, monthname, day, hour, minute, second, year, month, user_activity, user_category
 def normalizeTwittos(srcf, outd):
-    counter = 0
+    counter = 2061787
     with open(srcf, newline='') as f:
         usrs = csv.reader(f, delimiter=',')
         
@@ -84,4 +83,4 @@ if __name__ == '__main__':
         pass
 
     lastid = normalizeTwittos(usf, outd)
-    normalizeTweets(twf, outd, lastid)
+    # normalizeTweets(twf, outd, lastid)

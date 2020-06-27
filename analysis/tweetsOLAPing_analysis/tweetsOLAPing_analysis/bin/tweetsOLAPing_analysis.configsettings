@@ -2,35 +2,55 @@
   <Database>
     <DataSources>
       <DataSource>
-        <ID>Tweets OLA Ping</ID>
-        <ConnectionString>Provider=SQLNCLI11.1;Data Source=DESKTOP-B595UD7\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=tweetsOLAPing</ConnectionString>
+        <ID>TweetsOLAPing</ID>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=DESKTOP-B595UD7\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=tweetsOLAPing_fullversion</ConnectionString>
         <ImpersonationInfo>
-          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateAccount</ImpersonationMode>
-          <Account xmlns="http://schemas.microsoft.com/analysisservices/2003/engine"></Account>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
           <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
         </ImpersonationInfo>
       </DataSource>
     </DataSources>
     <Dimensions>
       <Dimension>
-        <ID>DateDim</ID>
+        <ID>Tweet Meta Data</ID>
       </Dimension>
       <Dimension>
-        <ID>TimestampDim</ID>
+        <ID>Location</ID>
       </Dimension>
       <Dimension>
-        <ID>LocationDim</ID>
+        <ID>Timestamp</ID>
       </Dimension>
       <Dimension>
-        <ID>TweetMetaDataDim</ID>
+        <ID>Twitto Meta Data</ID>
       </Dimension>
       <Dimension>
-        <ID>TwittoMetaDataDim</ID>
+        <ID>Date</ID>
       </Dimension>
     </Dimensions>
     <Cubes>
       <Cube>
-        <ID>Tweets_OLAPing_cube</ID>
+        <ID>TweetsOLAPing_cube</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Tweet</ID>
+            <Partitions>
+              <Partition>
+                <ID>Tweet</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Twitto</ID>
+            <Partitions>
+              <Partition>
+                <ID>Twitto</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>TweetsOLAPing_cube2</ID>
         <MeasureGroups>
           <MeasureGroup>
             <ID>Tweet</ID>

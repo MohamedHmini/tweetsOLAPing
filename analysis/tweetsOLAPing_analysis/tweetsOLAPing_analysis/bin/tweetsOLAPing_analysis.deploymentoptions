@@ -2,7 +2,7 @@
   <TransactionalDeployment>false</TransactionalDeployment>
   <PartitionDeployment>DeployPartitions</PartitionDeployment>
   <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
-  <ProcessingOption>Default</ProcessingOption>
+  <ProcessingOption>DoNotProcess</ProcessingOption>
   <OutputScript></OutputScript>
   <ImpactAnalysisFile></ImpactAnalysisFile>
   <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>

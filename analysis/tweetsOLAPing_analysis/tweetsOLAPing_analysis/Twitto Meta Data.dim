@@ -1,6 +1,6 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b848de86-fac9-4d26-afcd-fbc54ef0a0bf" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
-  <ID>TwittoMetaDataDim</ID>
-  <Name>TwittoMetaDataDim</Name>
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="03d9298a-ebd8-409c-a1b3-14040704da98" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Twitto Meta Data</ID>
+  <Name>Twitto Meta Data</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
   <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
   <Annotations>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3771" scrolltop="-9406" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10583" y="21960" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3771" scrolltop="-8930" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10583" y="21008" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -51,7 +51,7 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-9406</Value>
+      <Value>-8930</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -68,41 +68,45 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="786766b3-c685-46af-833a-2c165e4241e5">
-    <DataSourceViewID>Tweets_OLAPing_view</DataSourceViewID>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="2f5acd49-18c1-4215-8cb5-c094ed560d4b">
+    <DataSourceViewID>TweetsOLAPing_view</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="d0c4badf-4c55-436b-9479-5537e924ec88">
+  <ErrorConfiguration dwd:design-time-name="19f95bdc-b0e3-46f6-a727-91ec4caede7a">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="6777f509-350a-4536-b2b4-d03629c9221b">
+    <Attribute dwd:design-time-name="43488e9f-c253-4fa4-b33e-438ed1c1f77d">
       <ID>Usrmd Id</ID>
       <Name>Usrmd Id</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="428c1a23-1bf8-48a0-8962-8788e5a170a4">
-          <NullProcessing>UnknownMember</NullProcessing>
+        <KeyColumn dwd:design-time-name="8309f65d-db81-4edd-83e7-b5bc88977c5d">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f536fd78-98cf-447c-93f7-cf72a66a76bb">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a132313a-2644-486e-a0f3-47ba3f287442">
             <TableID>dbo_Twitto_MetaData</TableID>
             <ColumnID>usrmd_id</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="5fe374e8-a251-4ec8-8bea-c087f9ef8afc">
+        <AttributeRelationship dwd:design-time-name="62cfa6e6-dc15-4691-98ef-b0a626263d9a">
+          <AttributeID>Usrmd Key</AttributeID>
+          <Name>Usrmd Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="76eef64c-fc1c-49bf-8711-130e5d9dd3b7">
           <AttributeID>User Category</AttributeID>
           <Name>User Category</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="b05614d8-99ab-4c68-a367-7ebb629bdb31">
+        <AttributeRelationship dwd:design-time-name="2374db83-66a9-416a-bc8f-05948468ae61">
           <AttributeID>User Activity</AttributeID>
           <Name>User Activity</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="5f2f5ea4-693a-4b11-b9f3-9a86e8d6a0cb">
+        <AttributeRelationship dwd:design-time-name="06a2b2f9-5810-4fa7-ad7e-e6a445294004">
           <AttributeID>Lang</AttributeID>
           <Name>Lang</Name>
         </AttributeRelationship>
@@ -111,77 +115,84 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="fdcbceef-e674-4059-8eee-f55aa88a9a9f">
+    <Attribute dwd:design-time-name="816a4092-9bb1-498a-b11f-a69d17af251d">
+      <ID>Usrmd Key</ID>
+      <Name>Usrmd Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="94c9e899-3efe-4396-ba80-eabb6a026e15">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a77a549e-15b2-4722-804e-b8776eb6b4cf">
+            <TableID>dbo_Twitto_MetaData</TableID>
+            <ColumnID>usrmd_key</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="48bb874c-9f37-4504-a9cb-e4318a8f455d">
       <ID>User Category</ID>
       <Name>User Category</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="8a74f430-fd35-4b4f-8bc6-8e0a1c40af96">
+        <KeyColumn dwd:design-time-name="de1ae013-3585-41f3-a3aa-4cd02f422161">
           <DataType>WChar</DataType>
           <DataSize>25</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="193909f1-0b34-4781-84aa-5ce15879cf68">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dd948b3e-270b-48eb-bfb2-ed1cde826c55">
             <TableID>dbo_Twitto_MetaData</TableID>
             <ColumnID>user_category</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="8c4aa26a-26f0-42df-b8e7-9f52fe2d0f4b">
+    <Attribute dwd:design-time-name="d648fa93-4ef4-4ecd-8993-ce8a3a877ab2">
       <ID>User Activity</ID>
       <Name>User Activity</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="0c58b3a7-323d-4bf0-9873-911686af5308">
+        <KeyColumn dwd:design-time-name="56548224-f923-4293-8864-ea23ca62af25">
           <DataType>WChar</DataType>
           <DataSize>12</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="8da9abfe-9e32-4bf7-ad92-fdd561236250">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c8716a7e-cd1e-4932-927a-828c2e835489">
             <TableID>dbo_Twitto_MetaData</TableID>
             <ColumnID>user_activity</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="c3ae8b65-f491-47de-8828-8e768bfb15e9">
+    <Attribute dwd:design-time-name="3b4e3dc1-3904-4711-a3d4-3194ae1326e1">
       <ID>Lang</ID>
       <Name>Lang</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="67739ea6-1392-4d04-b0ee-055554ba4760">
+        <KeyColumn dwd:design-time-name="4fe95f37-efc1-4d0c-9aec-a9b6c9b086f8">
           <DataType>WChar</DataType>
           <DataSize>8</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="6312a3e9-bd86-430a-b48d-71a87c7bfae5">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f6d30ea2-6e62-43c1-a3e7-36aabf94a238">
             <TableID>dbo_Twitto_MetaData</TableID>
             <ColumnID>lang</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="20ba7877-a2b4-46e4-ade2-cf63caf04f65">
+    <Hierarchy dwd:design-time-name="65060b70-0e51-4119-afd9-249656dccfdc">
       <ID>Hierarchy</ID>
-      <Name>user_class</Name>
+      <Name>user type</Name>
       <Levels>
-        <Level dwd:design-time-name="7fe96843-105b-4e37-9052-53ee2286e98a">
+        <Level dwd:design-time-name="e6405904-0ab8-424c-bcaa-df865df1ae4f">
           <ID>User Category</ID>
           <Name>User Category</Name>
           <SourceAttributeID>User Category</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="70b423e7-1151-4435-9b28-3ad6f0601880">
+        <Level dwd:design-time-name="a4e962e5-f64b-443c-83a1-5fe2af707c0e">
           <ID>User Activity</ID>
           <Name>User Activity</Name>
           <SourceAttributeID>User Activity</SourceAttributeID>
-        </Level>
-        <Level dwd:design-time-name="6609a5b3-43e6-41b3-9984-f6375531174c">
-          <ID>Usrmd Id</ID>
-          <Name>Usrmd Id</Name>
-          <SourceAttributeID>Usrmd Id</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>

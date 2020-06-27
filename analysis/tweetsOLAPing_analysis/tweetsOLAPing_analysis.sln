@@ -3,21 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1062
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "tweetsOLAPing_analysis", "tweetsOLAPing_analysis\tweetsOLAPing_analysis.dwproj", "{3D8277CF-36E6-4138-9CC3-D0F447F283DE}"
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "tweetsOLAPing_analysis", "tweetsOLAPing_analysis\tweetsOLAPing_analysis.dwproj", "{EE086B64-E8BA-4053-944E-DD9E0E1496C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Development|Default = Development|Default
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3D8277CF-36E6-4138-9CC3-D0F447F283DE}.Development|Default.ActiveCfg = Development
-		{3D8277CF-36E6-4138-9CC3-D0F447F283DE}.Development|Default.Build.0 = Development
-		{3D8277CF-36E6-4138-9CC3-D0F447F283DE}.Development|Default.Deploy.0 = Development
+		{EE086B64-E8BA-4053-944E-DD9E0E1496C2}.Development|Default.ActiveCfg = Development
+		{EE086B64-E8BA-4053-944E-DD9E0E1496C2}.Development|Default.Build.0 = Development
+		{EE086B64-E8BA-4053-944E-DD9E0E1496C2}.Development|Default.Deploy.0 = Development
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {31B726CA-3853-4DE2-903A-11C4266AC96E}
+		SolutionGuid = {7510E527-CF08-4EC8-8A7C-9EB255EF036E}
 	EndGlobalSection
 EndGlobal

@@ -8,48 +8,58 @@
   </Database>
   <Cubes>
     <ProjectItem>
-      <Name>Tweets_OLAPing_cube.cube</Name>
-      <FullPath>Tweets_OLAPing_cube.cube</FullPath>
+      <Name>TweetsOLAPing_cube.cube</Name>
+      <FullPath>TweetsOLAPing_cube.cube</FullPath>
       <Dependencies>
         <ProjectItem>
-          <Name>Tweets_OLAPing_cube.partitions</Name>
-          <FullPath>Tweets_OLAPing_cube.partitions</FullPath>
+          <Name>TweetsOLAPing_cube.partitions</Name>
+          <FullPath>TweetsOLAPing_cube.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TweetsOLAPing_cube2.cube</Name>
+      <FullPath>TweetsOLAPing_cube2.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>TweetsOLAPing_cube2.partitions</Name>
+          <FullPath>TweetsOLAPing_cube2.partitions</FullPath>
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
   </Cubes>
   <Dimensions>
     <ProjectItem>
-      <Name>DateDim.dim</Name>
-      <FullPath>DateDim.dim</FullPath>
+      <Name>Tweet Meta Data.dim</Name>
+      <FullPath>Tweet Meta Data.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>TimestampDim.dim</Name>
-      <FullPath>TimestampDim.dim</FullPath>
+      <Name>Location.dim</Name>
+      <FullPath>Location.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>LocationDim.dim</Name>
-      <FullPath>LocationDim.dim</FullPath>
+      <Name>Timestamp.dim</Name>
+      <FullPath>Timestamp.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>TweetMetaDataDim.dim</Name>
-      <FullPath>TweetMetaDataDim.dim</FullPath>
+      <Name>Twitto Meta Data.dim</Name>
+      <FullPath>Twitto Meta Data.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>TwittoMetaDataDim.dim</Name>
-      <FullPath>TwittoMetaDataDim.dim</FullPath>
+      <Name>Date.dim</Name>
+      <FullPath>Date.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
-      <Name>Tweets OLA Ping.ds</Name>
-      <FullPath>Tweets OLA Ping.ds</FullPath>
+      <Name>TweetsOLAPing.ds</Name>
+      <FullPath>TweetsOLAPing.ds</FullPath>
     </ProjectItem>
   </DataSources>
   <DataSourceViews>
     <ProjectItem>
-      <Name>Tweets_OLAPing_view.dsv</Name>
-      <FullPath>Tweets_OLAPing_view.dsv</FullPath>
+      <Name>TweetsOLAPing_view.dsv</Name>
+      <FullPath>TweetsOLAPing_view.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
   <Configurations>
@@ -58,15 +68,15 @@
       <Options>
         <ConnectionMappings>
           <ConfigurationSetting>
-            <Id>Tweets OLA Ping</Id>
-            <Name>Tweets OLA Ping</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=DESKTOP-B595UD7\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=tweetsOLAPing</Value>
+            <Id>TweetsOLAPing</Id>
+            <Name>TweetsOLAPing</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=DESKTOP-B595UD7\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=tweetsOLAPing_fullversion</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>
           <ConfigurationSetting>
-            <Id>Tweets OLA Ping</Id>
-            <Name>Tweets OLA Ping</Name>
+            <Id>TweetsOLAPing</Id>
+            <Name>TweetsOLAPing</Name>
             <Value xsi:type="xsd:int">0</Value>
           </ConfigurationSetting>
         </ConnectionSecurityMappings>
