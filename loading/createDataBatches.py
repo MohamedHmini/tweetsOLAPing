@@ -17,6 +17,7 @@ except:
 
 for fn in os.listdir(srcd):
     fp = os.path.join(srcd,fn)
+    if os.path.isdir(fp): continue
     op = os.path.join(optd, fn)
     c = 0
     with open(fp) as srcf:
