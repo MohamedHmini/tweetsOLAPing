@@ -1,0 +1,100 @@
+id,tw_id,tweet_type,is_quote,source,is_truncated,is_possibly_sensitive,lang,has_hashtags,has_urls,has_user_mentions,has_symbols,media_type
+366472,881298121967280128,response,False,天寿,False,,ja,False,False,True,False,
+366471,881298121975775232,normal-tweet,False,twittbot.net,False,,ja,False,False,False,False,
+366470,881298121988259841,normal-tweet,False,Twitter for Android,False,,ja,False,False,False,False,
+366476,881298121954705409,normal-tweet,False,Twitter for iPhone,False,,ja,False,False,False,False,
+366477,881298121967390721,normal-tweet,False,Twitter for iPhone,False,,ja,False,False,False,False,
+366473,881298121958936577,normal-tweet,False,Twitter Web Client,False,False,und,False,True,False,False,
+366474,881298121958895616,response,False,Twitter for iPhone,False,,in,False,False,True,False,
+366478,881298121950736384,response,False,Twitter for iPad,False,,en,False,False,True,False,
+366475,881298121988362240,response,False,FantaJapanInstantWin_QuoteTweet,False,False,ja,False,False,True,False,video
+366480,881298121984065536,mentions,False,Twitter Lite,False,False,en,False,False,True,False,photo
+366479,881298121975885824,mentions,False,Twitter for Android,False,,ar,False,False,True,False,
+366481,881298121971699716,normal-tweet,False,Twitter for iPhone,False,,en,False,False,False,False,
+366483,881298121971474432,response,False,Twitter for iPhone,False,,ja,False,False,True,False,
+366482,881298121988243456,normal-tweet,False,Twitter Web Client,False,False,und,False,True,False,False,
+366484,881298121963261952,response,False,Twitter for Android,False,,und,False,False,True,False,
+366485,881298121967390720,mentions,False,Twitter for Android,False,False,en,False,False,True,False,photo
+366487,881298121971556352,mentions,True,Twitter for iPhone,False,False,en,False,True,True,False,
+366486,881298121971691520,normal-tweet,False,تطبـيـق دعـــــاء ,False,False,ar,False,True,False,False,
+366488,881298121975791616,response,False,Twitter Lite,False,,en,False,False,False,False,
+366489,881298121963311104,response,False,Twitter for iPhone,False,,pt,False,False,True,False,
+366490,881298121980092416,normal-tweet,False,تطبـيـق دعـــــاء ,False,False,ar,False,True,False,False,
+366492,881298121959112704,mentions,False,Twitter for Android,False,,ar,False,False,True,False,
+366491,881298121988468737,response,False,Twitter for iPhone,False,,und,False,False,True,False,
+366493,881298121950711810,normal-tweet,False,Instagram,False,False,en,False,True,False,False,
+366494,881298121950511104,mentions,False,Twitter for Android,False,,th,False,True,True,False,
+366495,881298121979985924,normal-tweet,False,صدقـة,False,False,ar,False,True,False,False,
+366496,881298121959108608,mentions,False,Twitter for Android,False,True,en,False,False,True,False,photo
+366498,881298121959120896,normal-tweet,True,Twitter for iPhone,False,False,es,False,True,False,False,
+366497,881298121967456257,mentions,False,Twitter for Android,False,,en,False,False,True,False,
+366499,881298121984233472,mentions,False,Twitter Web Client,False,False,pt,False,False,True,False,photo
+366500,881298121963302912,response,False,Twitter Web Client,False,False,en,True,False,True,False,animated_gif
+366501,881298121984270340,response,False,Twitter for iPhone,False,False,en,False,False,True,False,photo
+366502,881298121980096512,normal-tweet,False,Twitter for iPhone,False,False,tr,False,False,False,False,photo
+366503,881298121980088320,normal-tweet,False,Twitter for Android,False,False,und,False,False,False,False,photo
+366504,881298121984065537,normal-tweet,False,Twitter for iPhone,False,False,und,False,True,False,False,photo
+366506,881298126153412609,normal-tweet,False,Twitter Web Client,False,,pt,True,False,False,False,
+366505,881298126153302016,mentions,False,Twitter for Android,False,False,en,False,False,True,False,video
+366507,881298126169964544,mentions,False,Twitter for iPhone,False,False,es,True,False,True,False,photo
+366508,881298126165991424,mentions,False,Twitter for Android,False,,es,False,False,True,False,
+366512,881298126174273536,mentions,False,Twitter for Android,False,,th,False,False,True,False,
+366511,881298126157434880,mentions,False,Twitter for Android,False,False,ja,False,False,True,False,photo
+366510,881298126149210113,mentions,False,Twitter for Android,False,,pt,False,False,True,False,
+366509,881298126170148864,mentions,False,Twitter for iPhone,False,,es,False,False,True,False,
+366513,881298126161760256,normal-tweet,False,SocialOomph,False,False,tr,False,True,False,False,
+366515,881298126144983041,mentions,False,Twitter Lite,False,,en,False,False,True,False,
+366514,881298126166011906,response,False,Twitter for Android,False,,fr,False,False,True,False,
+366517,881298126170013697,normal-tweet,False,Twitter Web Client,False,False,und,False,True,False,False,
+366516,881298126161797120,mentions,False,Twitter Lite,False,,en,False,True,True,False,
+366518,881298126157623296,normal-tweet,False,تطبيق قرآني,False,False,ar,False,True,False,False,
+366520,881298126178537473,response,False,Twitter for Android,False,,en,False,False,True,False,
+366522,881298126166003712,normal-tweet,False,Instagram,False,False,en,True,True,False,False,
+366519,881298126149177344,normal-tweet,False,Twitter for iPhone,False,,ar,False,False,False,False,
+366521,881298126178361344,mentions,False,Twitter for iPhone,False,False,und,True,False,True,False,photo
+366523,881298126153306113,mentions,False,Twitter for iPad,False,False,und,False,False,True,False,photo
+366526,881298126153412608,mentions,True,Twitter for Android,False,,en,False,True,True,False,
+366525,881298126161801218,mentions,True,Twitter Web Client,False,,de,True,True,True,False,
+366524,881298126174289921,mentions,False,Twitter for Android,False,,pt,True,False,True,False,
+366527,881298126157623298,normal-tweet,False,Twitter for iPhone,False,,ar,False,False,False,False,
+366528,881298126178484224,normal-tweet,False,twasul news apps,False,,ar,True,False,False,False,
+366529,881298126178537472,mentions,False,TweetDeck,False,,es,False,False,True,False,
+366531,881298126174273537,normal-tweet,False,Twitter for Android,False,,tl,False,False,False,False,
+366534,881298126157623299,normal-tweet,False,Twitter for iPhone,False,False,tr,False,True,False,False,
+366536,881298126170140672,mentions,False,Twitter Lite,False,,es,True,False,True,False,
+366532,881298126149218304,normal-tweet,False,Twitter for iPhone,False,,en,False,False,False,False,
+366535,881298126145019905,mentions,False,cpimsohna,False,,en,False,True,True,False,
+366530,881298126174158849,mentions,True,Twitter Lite,False,False,en,False,True,True,False,
+366533,881298126170140674,mentions,False,Twitter Lite,False,,pt,False,False,True,False,
+366538,881298126149218306,mentions,False,Twitter for iPhone,False,False,en,False,False,True,False,photo
+366537,881298126165823488,mentions,False,Twitter for Android,False,False,ko,True,False,True,False,photo
+366539,881298126170193920,response,False,Twitter for Android,False,,en,False,False,True,False,
+366541,881298126174400512,normal-tweet,False,Twitter for iPhone,False,,ru,False,False,False,False,
+366540,881298126178586628,normal-tweet,False,Twitter for Android,False,,pt,False,False,False,False,
+366543,881298126165823489,mentions,False,Twitter for iPhone,False,,ja,True,True,True,False,
+366545,881298126174396417,normal-tweet,True,Twitter for Android,False,False,pt,False,True,False,False,
+366542,881298126161707008,normal-tweet,False,Twitter for Android,False,,und,True,False,False,False,
+366544,881298126157565952,mentions,True,Twitter for iPhone,False,False,en,False,True,True,False,
+366547,881298126145024003,normal-tweet,False,Instagram,False,False,en,True,True,False,False,
+366546,881298126145032192,mentions,True,Twitter for iPhone,False,False,pt,False,True,True,False,
+366548,881298126170198016,normal-tweet,False,CamObserver,False,False,und,True,False,False,False,photo
+366549,881298130351775744,normal-tweet,False,はづきはづnameき,False,False,ja,False,True,False,False,
+366550,881298130368475137,mentions,False,Twitter for Android,False,False,ro,False,True,True,False,photo
+366552,881298130347724800,response,False,Twitter for Android,False,,es,False,False,False,False,
+366551,881298130343387137,mentions,False,Twitter Web Client,False,False,en,False,True,True,False,
+366555,881298130339115008,mentions,False,Twitter Lite,False,,en,False,False,True,False,
+366557,881298130377076736,mentions,False,Twitter for Android,False,,ar,True,False,True,False,
+366553,881298130351685632,mentions,False,Twitter Web Client,False,,ja,False,False,True,False,
+366554,881298130347610113,response,False,Twitter for iPhone,False,,ja,False,False,False,False,
+366558,881298130372710400,normal-tweet,False,Twitter for Android,False,,ko,False,False,False,False,
+366556,881298130364276736,mentions,False,Twitter for Android,False,False,ja,True,False,True,False,photo
+366559,881298130355994624,response,False,Twitter Web Client,False,,en,False,False,True,False,
+366561,881298130376900609,normal-tweet,False,twittbot.net,False,,en,False,False,False,False,
+366563,881298130360123392,response,False,Twitter for iPhone,False,,ja,False,False,True,False,
+366560,881298130339115009,mentions,False,TweetDeck,False,False,ja,False,False,True,False,photo
+366562,881298130347732992,response,False,Twitter Lite,False,,es,False,False,True,False,
+366564,881298130364358656,normal-tweet,False,ANA_LOGIN_SERVICE,False,False,ja,False,True,False,False,
+366565,881298130343522305,response,False,Twitter for Android,False,,en,False,False,True,False,
+366566,881298130356113408,mentions,False,Twitter for Android,False,,pt,True,False,True,False,
+366567,881298130351906819,mentions,False,Twitter for iPhone,False,,pt,False,False,True,False,
+366568,881298130368704512,normal-tweet,False,Twitter for Android,False,,pt,False,False,False,False,

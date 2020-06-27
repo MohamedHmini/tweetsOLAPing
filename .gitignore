@@ -28,3 +28,12 @@ cleanTweets.py
 batch_data/
 users/
 !tweetsPOOLs.csv
+!sample-data/urls_root
+!sample-data/chosen_urls.txt
+!sample-data/tweetsSTREAMs.csv
+!sample-data/decompressed-pools/*.json
+!sample-data/normalized-data/*.csv
+!sample-data/processed/*.csv
+!sample-data/urls_root/1/*.txt
+!sample-data/urls_root/2/*.txt
+!sample-data/
