@@ -116,4 +116,4 @@ here are some examples :
 ![alt text](analysis-example/analysis5.gif)
 
 
-<bold> MOHAMED-HMINI </bold>
+<b> MOHAMED-HMINI 2020</b>
