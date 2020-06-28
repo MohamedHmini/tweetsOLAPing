@@ -104,6 +104,15 @@ as well as the SSAS logic is fully provided : https://github.com/MohamedHmini/tw
 
 ## 2. Analysis :
 
+the final report is provided in : https://github.com/MohamedHmini/tweetsOLAPing/tree/master/analysis/powerBI
+
+here are some examples :
+
+![alt text](analysis-example/analysis1.gif)
+![alt text](analysis-example/analysis2.gif)
+![alt text](analysis-example/analysis3.gif)
+![alt text](analysis-example/analysis4.gif)
+![alt text](analysis-example/analysis5.gif)
 
 
 <bold> MOHAMED-HMINI </bold>
