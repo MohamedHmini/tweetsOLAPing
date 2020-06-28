@@ -103,6 +103,41 @@ for SSIS logic i provide the full model : https://github.com/MohamedHmini/tweets
 
 as well as the SSAS logic is fully provided : https://github.com/MohamedHmini/tweetsOLAPing/tree/master/analysis/tweetsOLAPing_analysis
 
+#### SSIS modeling : 
+
+after setting up all the connections ( the normalized data as well as the OLEDB destinations), we now arrive at the integration step or the data loading : 
+
+<p align="center">
+  <img src="./imgs/SSIS-global-process.jpg" />
+</p>
+<p align="center">
+  <img src="./imgs/dates-data-flow.jpg" />
+</p>
+<p align="center">
+  <img src="./imgs/ts-data-flow.jpg" />
+</p>
+<p align="center">
+  <img src="./imgs/loc-data-flow.jpg" />
+</p>
+<p align="center">
+  <img src="./imgs/twmd-data-flow.jpg" />
+</p>
+<p align="center">
+  <img src="./imgs/usrmd-data-flow.jpg" />
+</p>
+<p align="center">
+  <img src="./imgs/tw-data-flow.jpg" />
+</p>
+<p align="center">
+  <img src="./imgs/usr-data-flow.jpg" />
+</p>
+
+#### SSAS cube modeling : 
+
+<p align="center">
+  <img src="./imgs/model.jpg" />
+</p>
+
 ## 2. Analysis :
 
 the final report is provided in : https://github.com/MohamedHmini/tweetsOLAPing/tree/master/analysis/powerBI
