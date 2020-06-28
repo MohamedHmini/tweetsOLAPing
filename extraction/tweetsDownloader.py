@@ -6,13 +6,13 @@ import requests as req
 args = sys.argv
 src = os.path.abspath(args[1])
 optdir = os.path.abspath(args[2])
+errfile = os.path.abspath(args[3])
 
 try:
     os.mkdir(optdir)
 except:
     pass
 
-errfile = "err.txt"
 with open(src) as srcf:
     count = 1
     for url in srcf:
