@@ -2,6 +2,18 @@
 
 i'll walk you through an execution example using light-weight (very) data to show you the results.
 
+## Table of Contents :
+- [0- ENV set-up:](#0--env-set-up-)
+- [1- ETL pipeline :](#1--etl-pipeline--)
+  * [a) Extraction :](#a--extraction--)
+  * [b) Transformation :](#b--transformation--)
+  * [c) Loading :](#c--loading--)
+    + [SSIS modeling :](#ssis-modeling--)
+    + [SSAS cube modeling :](#ssas-cube-modeling--)
+- [2. Analysis :](#2-analysis--)
+  * [MDX queries :](#mdx-queries--)
+  * [powerBI report :](#powerbi-report--)
+
 ## 0- ENV set-up:
 
 the extraction/transformation steps of the pipeline will need the following environment set-up :
@@ -139,6 +151,57 @@ after setting up all the connections ( the normalized data as well as the OLEDB 
 </p>
 
 ## 2. Analysis :
+
+### MDX queries : 
+
+```sql
+SELECT 
+  NON EMPTY
+  (
+    [Twitto Meta Data].[User Category].children, 
+    [Measures].[Retweet Count]
+  ) ON COLUMNS,
+  NON EMPTY 
+  (
+    [Twitto Meta Data].[User Activity].children
+  ) ON ROWS
+FROM
+  [TweetsOLAPing_cube]
+```
+
+```sql
+SELECT 
+  NON EMPTY
+  (
+    [Twitto Meta Data].[User Category].children, 
+    [Measures].[Retweet Count]
+  ) ON COLUMNS,
+  NON EMPTY 
+  (
+    [Twitto Meta Data].[User Activity].children, 
+    [Tweet Meta Data].[Sentiment Tag].children
+  ) ON ROWS
+FROM
+  [TweetsOLAPing_cube]
+```
+
+```sql
+SELECT 
+  NON EMPTY
+  (
+    [Tweet Meta Data].[Media Type].children, 
+    [Measures].[Retweet Count]
+  ) ON COLUMNS,
+  NON EMPTY 
+  (
+    [Tweet Meta Data].[Has Hashtags].children, 
+    [Date].[Weekday].children
+  ) ON ROWS
+FROM
+  [TweetsOLAPing_cube]
+```
+
+### powerBI report :
 
 the final report is provided in : https://github.com/MohamedHmini/tweetsOLAPing/tree/master/analysis/powerBI
 
