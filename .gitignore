@@ -37,3 +37,4 @@ users/
 !sample-data/urls_root/1/*.txt
 !sample-data/urls_root/2/*.txt
 !sample-data/
+!requirements.txt
