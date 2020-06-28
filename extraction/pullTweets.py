@@ -27,10 +27,10 @@ args = sys.argv
 srcf = os.path.abspath(args[1])
 optf = os.path.abspath(args[2])
 api = getAPI(
-    'kp4X0DiSXOKhPeMU6yZyPEO6t',
-    'c88fpnd6LtqkbzJSF3tgmAn59XlkGOFHfUdNCAan6GaJjmgbfK',
-    '3743390783-YV3X5SwhSQqH7JotPOO8OEpoZl6TrBCi9TPOexR',
-    'mjqei2AWi8U7JoWC3FA6Lhl6Ro5ERzjnDhQXGv3MpSsDk'
+    args[3],
+    args[4],
+    args[5],
+    args[6]
 )
 
 with open(srcf) as src:
