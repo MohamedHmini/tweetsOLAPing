@@ -1,0 +1,26 @@
+SELECT 
+	NON EMPTY
+	([Twitto Meta Data].[User Category].children, [Measures].[Retweet Count]) ON COLUMNS,
+	NON EMPTY 
+	([Twitto Meta Data].[User Activity].children) ON ROWS
+FROM
+	[TweetsOLAPing_cube]
+
+
+
+SELECT 
+	NON EMPTY
+	([Twitto Meta Data].[User Category].children, [Measures].[Retweet Count]) ON COLUMNS,
+	NON EMPTY 
+	([Twitto Meta Data].[User Activity].children, [Tweet Meta Data].[Sentiment Tag].children) ON ROWS
+FROM
+	[TweetsOLAPing_cube]
+
+
+SELECT 
+	NON EMPTY
+	([Tweet Meta Data].[Media Type].children, [Measures].[Retweet Count]) ON COLUMNS,
+	NON EMPTY 
+	([Tweet Meta Data].[Has Hashtags].children, [Date].[Weekday].children) ON ROWS
+FROM
+	[TweetsOLAPing_cube]
