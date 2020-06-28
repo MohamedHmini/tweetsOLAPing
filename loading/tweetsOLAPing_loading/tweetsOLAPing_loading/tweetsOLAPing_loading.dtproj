@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-B595UD7</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbh7uPR/UJU+/pkv1pd0aiAAAAAACAAAAAAAQZgAAAAEAACAAAABumSozkodGeQVZwRLQiy5+oNbRSOsgqMRNii7GErbv5QAAAAAOgAAAAAIAACAAAAAb3wzjvRfEZaAiLpDoEufkOKT5DHmNg60depLspbJgbJAAAACjaMmgZswJ/hcZ3caDwtWG1foM01tzwHqCrDqrXwrdvxrO6JpVdNbJJbeqQsVDn64YFb7hDIoKFwfMUq0IpFF5fMVrXe2vsJkjlffgffpADnK8dyXK7TAO3LxwvOn0s/3pcxxDDD0Q4RccpXFdvdZTxTSJZcfdnVLaducMbt9XaGnXYvHzyde8t+hicOK8ZeFAAAAANG8S8H3lKBtnEo9npJmOpBDLq7EezI/ViwMXwS3VOToEnmvyPs7JpYFcrHHmx3aKM4mZHZS6BNuQXm8LZQL15w==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbh7uPR/UJU+/pkv1pd0aiAAAAAACAAAAAAAQZgAAAAEAACAAAAAgHHqqNbywhYSbHxsD80yLRxXAAj2CmO3n2fAfMl/BqQAAAAAOgAAAAAIAACAAAADG4dzkYHm+o6jmLnTLEzZ/wSkWOx3vnV1RjOpYm80kQZAAAACMEcSKFYrfQfCk0BtpW6r0KnGC9GMeYT5VC129liGRr2fE++VywOWQO1rxzx1CssDnB5OGegODWq+HtlngI2uwJMPnd3y+NlBECzLHAanKNCQ8ajmUlNhNdsoWyIH28pFWuARRb1EI91wfLq+Z0JDVotJy+XstM3NP8wrDpUpYCb2kRwGSAi/FhteUFn6OYrJAAAAAfeCt7es0tNu1r9bdQpXgZLhuQCHMLAj5gB/wA/zASvQkVehRKvOyWmQRADdzO7fAiUSkQ2zt4ymmu+u+TmE2hA==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -42,10 +42,10 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">517</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">363</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{B7C504E8-27E9-4C8C-BD94-07DA70AC054A}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{0D94E1B5-AD94-4DD3-8BD7-0648FDFFCD70}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -123,7 +123,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\MOHAMED HMINI\twitterOLAP\twitterOLAPing\data\normalized\date.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\MOHAMED HMINI\twitterOLAP\twitterOLAPing\batch_data\normalized\date.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -275,7 +275,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=DESKTOP-B595UD7\SQLEXPRESS;Initial Catalog=tweetsOLAPing_fullversion;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=DESKTOP-B595UD7\SQLEXPRESS;Initial Catalog=tweetsOLAPing;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -305,7 +305,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">tweetsOLAPing_fullversion</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">tweetsOLAPing</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -438,7 +438,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\MOHAMED HMINI\twitterOLAP\twitterOLAPing\data\normalized\location.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\MOHAMED HMINI\twitterOLAP\twitterOLAPing\batch_data\normalized\location.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -635,7 +635,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\MOHAMED HMINI\twitterOLAP\twitterOLAPing\data\normalized\timestamp.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\MOHAMED HMINI\twitterOLAP\twitterOLAPing\batch_data\normalized\timestamp.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -832,7 +832,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\MOHAMED HMINI\twitterOLAP\twitterOLAPing\data\tw_sentiments.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\MOHAMED HMINI\twitterOLAP\twitterOLAPing\batch_data\tw_sentiments.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1029,7 +1029,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\MOHAMED HMINI\twitterOLAP\twitterOLAPing\data\normalized\tweet_date.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\MOHAMED HMINI\twitterOLAP\twitterOLAPing\batch_data\normalized\tweet_date.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1226,7 +1226,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\MOHAMED HMINI\twitterOLAP\twitterOLAPing\data\normalized\tweet_location.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\MOHAMED HMINI\twitterOLAP\twitterOLAPing\batch_data\normalized\tweet_location.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1423,7 +1423,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\MOHAMED HMINI\twitterOLAP\twitterOLAPing\data\normalized\tweet_md.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\MOHAMED HMINI\twitterOLAP\twitterOLAPing\batch_data\normalized\tweet_md.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1620,7 +1620,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\MOHAMED HMINI\twitterOLAP\twitterOLAPing\data\normalized\tweet_timestamp.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\MOHAMED HMINI\twitterOLAP\twitterOLAPing\batch_data\normalized\tweet_timestamp.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1817,7 +1817,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\MOHAMED HMINI\twitterOLAP\twitterOLAPing\data\normalized\tweets.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\MOHAMED HMINI\twitterOLAP\twitterOLAPing\batch_data\normalized\tweets.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1908,8 +1908,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -2014,7 +2012,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\MOHAMED HMINI\twitterOLAP\twitterOLAPing\data\normalized\twitto_md.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\MOHAMED HMINI\twitterOLAP\twitterOLAPing\batch_data\normalized\twitto_md.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -2211,7 +2209,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\MOHAMED HMINI\twitterOLAP\twitterOLAPing\data\normalized\twittos.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\MOHAMED HMINI\twitterOLAP\twitterOLAPing\batch_data\normalized\twittos.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
