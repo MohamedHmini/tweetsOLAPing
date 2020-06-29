@@ -1,16 +1,19 @@
 # tweetsOLAPing : an end-to-end social-media data-warehousing project :
 
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
+
 i'll walk you through an execution example using light-weight (very) data to show you the results.
 
 ## Table of Contents :
-- [0- ENV set-up:](#0--env-set-up-)
-- [1- ETL pipeline :](#1--etl-pipeline--)
+- [ENV set-up :](#0--env-set-up-)
+- [ETL pipeline :](#1--etl-pipeline--)
   * [a) Extraction :](#a--extraction--)
   * [b) Transformation :](#b--transformation--)
   * [c) Loading :](#c--loading--)
     + [SSIS modeling :](#ssis-modeling--)
     + [SSAS cube modeling :](#ssas-cube-modeling--)
-- [2. Analysis :](#2-analysis--)
+- [Analysis :](#2-analysis--)
   * [MDX queries :](#mdx-queries--)
   * [powerBI report :](#powerbi-report--)
 
