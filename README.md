@@ -6,6 +6,9 @@
 i'll walk you through an execution example using light-weight (very) data to show you the results.
 
 ## Table of Contents :
+- [Twitter DataTypes :](#twitter-datatypes--)
+  * [TweetDataType :](#tweetdatatype--)
+  * [UserDataType :](#userdatatype--)
 - [ENV set-up :](#0--env-set-up-)
 - [ETL pipeline :](#1--etl-pipeline--)
   * [a) Extraction :](#a--extraction--)
@@ -16,6 +19,107 @@ i'll walk you through an execution example using light-weight (very) data to sho
 - [Analysis :](#2-analysis--)
   * [MDX queries :](#mdx-queries--)
   * [powerBI report :](#powerbi-report--)
+
+## Twitter DataTypes :
+
+### TweetDataType :
+
+```json
+{
+   "created_at":"Sat Jul 01 23:47:16 +0000 2017",
+   "id":881298189072072708,
+   "id_str":"881298189072072708",
+   "text":"seu perfil foi visto por 5 pessoas nas \u00faltimas 4 horas https:\/\/t.co\/cKb35CahC7",
+   "source":"\u003ca href=\"http:\/\/www.twitcom.com.br\" rel=\"nofollow\"\u003eTwitcom - Comunidades \u003c\/a\u003e",
+   "truncated":false,
+   "in_reply_to_status_id":null,
+   "in_reply_to_status_id_str":null,
+   "in_reply_to_user_id":null,
+   "in_reply_to_user_id_str":null,
+   "in_reply_to_screen_name":null,
+   "user": UserDataType,
+   "geo":null,
+   "coordinates":null,
+   "place":null,
+   "contributors":null,
+   "is_quote_status":false,
+   "retweet_count":0,
+   "favorite_count":0,
+   "entities":{
+      "hashtags":[
+
+      ],
+      "urls":[
+         {
+            "url":"https:\/\/t.co\/cKb35CahC7",
+            "expanded_url":"http:\/\/twcm.me\/5bHmW",
+            "display_url":"twcm.me\/5bHmW",
+            "indices":[
+               55,
+               78
+            ]
+         }
+      ],
+      "user_mentions":[
+
+      ],
+      "symbols":[
+
+      ]
+   },
+   "favorited":false,
+   "retweeted":false,
+   "possibly_sensitive":false,
+   "filter_level":"low",
+   "lang":"pt",
+   "timestamp_ms":"1498952836660"
+}
+```
+
+### UserDataType :
+
+```json
+{
+   "id":2696402179,
+   "id_str":"2696402179",
+   "name":"$AVAGE",
+   "screen_name":"SavageHumor",
+   "location":null,
+   "url":null,
+   "description":"SAVAGE TWEETS \nWARNING: 18+ Content",
+   "protected":false,
+   "verified":false,
+   "followers_count":150201,
+   "friends_count":0,
+   "listed_count":94,
+   "favourites_count":85,
+   "statuses_count":10696,
+   "created_at":"Thu Jul 31 18:52:37 +0000 2014",
+   "utc_offset":-18000,
+   "time_zone":"Central Time (US & Canada)",
+   "geo_enabled":false,
+   "lang":"en",
+   "contributors_enabled":false,
+   "is_translator":false,
+   "profile_background_color":"000000",
+   "profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+   "profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+   "profile_background_tile":false,
+   "profile_link_color":"DD2E44",
+   "profile_sidebar_border_color":"000000",
+   "profile_sidebar_fill_color":"000000",
+   "profile_text_color":"000000",
+   "profile_use_background_image":false,
+   "profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/875059551204249601\/J_XlKaiO_normal.jpg",
+   "profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/875059551204249601\/J_XlKaiO_normal.jpg",
+   "profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/2696402179\/1416368695",
+   "default_profile":false,
+   "default_profile_image":false,
+   "following":null,
+   "follow_request_sent":null,
+   "notifications":null
+}
+```
 
 ## 0- ENV set-up:
 
