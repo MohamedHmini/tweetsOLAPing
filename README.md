@@ -324,11 +324,11 @@ here are some examples :
 
 ## references : 
 
-1. Maha Ben Kraiem, Jamel Feki, Ka¨ıs Khrouf, Franck Ravat, Olivier Teste. OLAP of the tweets: From modeling to exploitation. IEEE International Conference on Research Challenges in Information Science, Marrakesh, Morocco, May 2014.
+[1] Maha Ben Kraiem, Jamel Feki, Ka¨ıs Khrouf, Franck Ravat, Olivier Teste. OLAP of the tweets: From modeling to exploitation. IEEE International Conference on Research Challenges in Information Science, Marrakesh, Morocco, May 2014.
 
-2. Maha Ben Kraiem, Jamel Feki, Ka¨ıs Khrouf, Franck Ravat, Olivier Teste. OLAP4Tweets: Multidimensional Modeling of tweets. 19th East-European Conference on Advances in Databases and Information Systems, Poitiers, France, September 2015.
+[2] Maha Ben Kraiem, Jamel Feki, Ka¨ıs Khrouf, Franck Ravat, Olivier Teste. OLAP4Tweets: Multidimensional Modeling of tweets. 19th East-European Conference on Advances in Databases and Information Systems, Poitiers, France, September 2015.
 
-3. Nafees Ur Rehman, Svetlana Mansmann, Andreas Weiler, Marc H. Scholl. Building a DataWarehouse for Twitter Stream Exploration. IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining, Istanbul, turkey, August 2012.
+[3] Nafees Ur Rehman, Svetlana Mansmann, Andreas Weiler, Marc H. Scholl. Building a DataWarehouse for Twitter Stream Exploration. IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining, Istanbul, turkey, August 2012.
 
 
 
