@@ -87,7 +87,7 @@ textblob==0.15.3
 tqdm==4.46.1
 tweepy==3.8.0
 Twisted==20.3.0
-urllib3==1.25.8
+urllib3==1.26.5
 w3lib==1.22.0
 webencodings==0.5.1
 zope.interface==5.1.0
