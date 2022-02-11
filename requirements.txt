@@ -86,7 +86,7 @@ soupsieve==2.0.1
 textblob==0.15.3
 tqdm==4.46.1
 tweepy==3.8.0
-Twisted==20.3.0
+Twisted==22.1.0
 urllib3==1.25.8
 w3lib==1.22.0
 webencodings==0.5.1
