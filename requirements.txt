@@ -48,7 +48,7 @@ lxml==4.5.1
 mecab-python3==0.996.5
 msgpack==0.6.2
 neologdn==0.4
-numpy==1.18.5
+numpy==1.22.0
 oauthlib==3.1.0
 oseti==0.2
 packaging==20.3
