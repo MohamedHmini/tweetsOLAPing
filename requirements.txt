@@ -56,7 +56,7 @@ parsel==1.6.0
 pep517==0.8.2
 progress==1.5
 Protego==0.1.16
-protobuf==3.12.2
+protobuf==3.18.3
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pycparser==2.20
