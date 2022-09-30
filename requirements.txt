@@ -39,7 +39,7 @@ hyperlink==19.0.0
 idna==2.8
 incremental==17.5.0
 ipaddr==2.2.0
-joblib==0.15.1
+joblib==1.2.0
 jProcessing==0.1
 jsbeautifier==1.11.0
 kiwisolver==1.2.0
